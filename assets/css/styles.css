@@ -1,0 +1,44 @@
+/*  card product */
+
+img#foto-produk {
+    width: 100%;
+}
+
+.buy-explore-btn {
+    display: flex;
+}
+
+a#btn-beli {
+    margin-right: 10px;
+    width: -webkit-fill-available;
+}
+
+a#btn-explore {
+    width: -webkit-fill-available;
+}
+
+div#list-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    padding-top: 15px;
+}
+
+a#list-group-harga {
+    border: 0px;
+    width: -webkit-fill-available;
+    font-size: medium;
+}
+
+a#list-group-brosur {
+    border: 0px;
+    width: -webkit-fill-available;
+    font-size: medium;
+}
+
+#col-card-produk {
+    padding: 15px;
+}
+
+
+/*  card product */
