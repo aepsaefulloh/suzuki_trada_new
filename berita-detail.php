@@ -43,7 +43,7 @@ require_once ('includes/header.php')
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12">
-                                <h1 class="b-title-page bg-primary_a">news blog</h1>
+                                <h1 class="b-title-page bg-primary_a">TITLE</h1>
                             </div>
                         </div>
                     </div>

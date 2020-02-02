@@ -1574,15 +1574,15 @@ blockquote cite {
 }
 
 .section-advantages-1 {
-    margin-top: -20px;
-    background-color: #f4f4f4;
-    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15);
+    padding-top: 30px;
+    /* background-color: #f4f4f4;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.15); */
 }
 
 .b-advantages-1 {
     position: relative;
     display: inline-block;
-    width: 33.3%;
+    width: 25%;
     margin-right: -3px;
     padding: 45px 5% 50px;
     vertical-align: top;
@@ -2778,7 +2778,7 @@ blockquote cite {
 }
 
 .b-form-checkup {
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 .section-form-contacts {

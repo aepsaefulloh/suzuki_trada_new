@@ -39,31 +39,40 @@ require_once ('includes/banner.php')
         <div class="row">
             <div class="col-md-12">
                 <div class="section-advantages-1">
-                    <section class="b-advantages-1"><i class="b-advantages-1__icon flaticon-gearbox"></i>
-                        <h3 class="b-advantages-1__title">Largest Dealership of Cars</h3>
-                        <div class="b-advantages-1__info">MotorLand is nisi aliquip ex consequat duis velit esse cillum
+                    <section class="b-advantages-1 active"><i class="b-advantages-1__icon flaticon-gearbox"></i>
+                        <h3 class="b-advantages-1__title">Text Drive</h3>
+                        <div class="b-advantages-1__info">lorem ipsum is nisi aliquip ex consequat duis velit esse cillum
                             dolore fugiat nulla pariatur excepteur sint occaecat.
                         </div>
-                        <span class="ui-decor-2"></span>
+                        <!-- <span class="ui-decor-2">
+                        </span> -->
                     </section>
                     <!-- end .b-advantages-->
-                    <section class="b-advantages-1 active"><i class="b-advantages-1__icon flaticon-steering-wheel"></i>
-                        <h3 class="b-advantages-1__title">We Offers Lower Cars Prices</h3>
-                        <div class="b-advantages-1__info">MotorLand is nisi aliquip ex consequat duis velit esse cillum
+                    <section class="b-advantages-1 active"><i class="b-advantages-1__icon flaticon-wrench"></i>
+                        <h3 class="b-advantages-1__title">Booking Service</h3>
+                        <div class="b-advantages-1__info">lorem ipsum is nisi aliquip ex consequat duis velit esse cillum
                             dolore fugiat nulla pariatur excepteur sint occaecat.
                         </div>
-                        <span class="ui-decor-2">
-
-                        </span>
+                        <!-- <span class="ui-decor-2">
+                        </span> -->
                     </section>
                     <!-- end .b-advantages-->
-                    <section class="b-advantages-1"><i class="b-advantages-1__icon flaticon-wrench"></i>
-                        <h3 class="b-advantages-1__title">Multipoint Safety Checks</h3>
-                        <div class="b-advantages-1__info">MotorLand is nisi aliquip ex consequat duis velit esse cillum
+                    <section class="b-advantages-1 active"><i class="b-advantages-1__icon flaticon-technology"></i>
+                        <h3 class="b-advantages-1__title">Call Center</h3>
+                        <div class="b-advantages-1__info">lorem ipsum is nisi aliquip ex consequat duis velit esse cillum
                             dolore fugiat nulla pariatur excepteur sint occaecat.
                         </div>
-                        <span class="ui-decor-2">
-                        </span>
+                        <!-- <span class="ui-decor-2">
+                        </span> -->
+                    </section>
+                    <!-- end .b-advantages-->
+                    <section class="b-advantages-1 active"><i class="b-advantages-1__icon flaticon-calculator"></i>
+                        <h3 class="b-advantages-1__title">Simulasi Kredit</h3>
+                        <div class="b-advantages-1__info">lorem ipsum is nisi aliquip ex consequat duis velit esse cillum
+                            dolore fugiat nulla pariatur excepteur sint occaecat.
+                        </div>
+                        <!-- <span class="ui-decor-2">
+                        </span> -->
                     </section>
                     <!-- end .b-advantages-->
                 </div>
@@ -267,7 +276,7 @@ require_once ('includes/banner.php')
         </div>
     </section>
     <!-- end .section-news-->
-   
+
 
     <?php
 require_once ('includes/footer.php')

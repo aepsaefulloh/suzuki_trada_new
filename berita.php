@@ -43,7 +43,7 @@ require_once ('includes/header.php')
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h1 class="b-title-page bg-primary_a">news blog</h1>
+                        <h1 class="b-title-page bg-primary_a">Berita</h1>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@ require_once ('includes/header.php')
                     <ol class="breadcrumb">
                         <li><a href="home.html"><i class="icon fa fa-home"></i></a>
                         </li>
-                        <li class="active">Latest News</li>
+                        <li class="active">Berita</li>
                     </ol>
                 </div>
             </div>

@@ -42,3 +42,20 @@ a#list-group-brosur {
 
 
 /*  card product */
+
+
+/* Start kontak */
+
+.kontak {
+    padding: 100px;
+    margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+    .kontak {
+        padding: 0px;
+    }
+}
+
+
+/* end Kontak */

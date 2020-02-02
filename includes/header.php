@@ -158,17 +158,29 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
             <div class="top-bar">
                 <div class="container">
                     <div class="header-topbarbox-1">
-                        <ul>
+                        <!-- <ul>
                             <li><i class="icon fa fa-clock-o"></i> Mon - Fri : 0900am to 0600pm</li>
                             <li><i class="icon fa fa-phone"></i><a href="tel:+0427983549">+ 042 798 3549</a>
                             </li>
                             <li><i class="icon fa fa-envelope-o"></i><a
                                     href="mailto:support@motorland.com">suzukitrada@gmail.com</a>
                             </li>
-                        </ul>
+                        </ul> -->
+                        <a href="<?php echo ROOT_URL?>">
+                            <img class="scroll-logo hidden-xs img-responsive" src="assets\img\logo-suzuki-trada-1.png"
+                                alt="logo" width="150px" />
+                        </a>
                     </div>
                     <div class="header-topbarbox-2">
-                        <ul class="social-links">
+                        <ul>
+                            <li><i class="icon fa fa-clock-o"></i> Mon - Fri : 0900am to 0600pm</li>
+                            <li><i class="icon fa fa-phone"></i><a href="tel:+0427983549">+ 042 798 3549</a>
+                            </li>
+                            <li><i class="icon fa fa-envelope-o"></i><a
+                                    href="suzukitrada@gmail.com">suzukitrada@gmail.com</a>
+                            </li>
+                        </ul>
+                        <!-- <ul class="social-links">
                             <li><a href="/" target="_blank"><i class="social_icons fa fa-twitter"></i></a>
                             </li>
                             <li><a href="/" target="_blank"><i class="social_icons fa fa-facebook"></i></a>
@@ -180,7 +192,8 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
                             </li>
                             <li><a href="/" target="_blank"><i class="social_icons fa fa-youtube-play"></i></a>
                             </li>
-                        </ul>
+                        </ul> -->
+
                     </div>
                 </div>
             </div>
