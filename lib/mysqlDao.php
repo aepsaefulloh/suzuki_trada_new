@@ -159,10 +159,18 @@ function getNewsRelated($objItem){
 	return $obj;    
 }
 
-function upcount($objItem){
+function upcountArt($objItem){
 	$obj=null;
     	
-	$obj['SQL']="UPDATE tbl_article set HIT='".$objItem['HIT']."' WHERE ID='".$objItem['ID']."'";
+	$obj['SQL']="UPDATE tbl_content set HIT='".$objItem['HIT']."' WHERE ID='".$objItem['ID']."'";
+		
+    $obj['RESULT']=DAOExecuteSQL($obj['SQL']);
+	return $obj;    	
+}
+function upcountPro($objItem){
+	$obj=null;
+    	
+	$obj['SQL']="UPDATE tbl_product set HIT='".$objItem['HIT']."' WHERE ID='".$objItem['ID']."'";
 		
     $obj['RESULT']=DAOExecuteSQL($obj['SQL']);
 	return $obj;    	

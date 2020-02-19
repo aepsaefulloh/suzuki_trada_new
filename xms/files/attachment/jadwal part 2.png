@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+        <title>Cyber Extension - Kementerian Pertanian - Pusat Penyuluhan Pertanian, Badan Penyuluhan dan Pengembangan SDM Pertanian</title>
+        <meta name="description" content="Cyber Extension adalah suatu mekanisme pertukaran informasi pertanian melalui area cyber, suatu ruang imajiner-maya di balik interkoneksi jaringan komputer melalui peralatan komunikasi. Penggunaan teknologi informasi dan komunikasi sebagai media baru penyuluhan ini dirasa lebih efektif dan efisien dalam penyelenggaraan penyuluhan pertanian guna meningkatkan akses informasi kepada; PPL (Penyuluh Pertanian Lapang) sehingga proses transformasi ilmu ke petani menjadi update. Disamping itu, user juga dapat secara interaktif berbagi informasi dan ilmu pengetahuan di kolom yang disediakan.
+Secara etimologi, cyber extension terdiri dari dua kata yaitu cyber dan extension. Cyber menurut Oxford Dictionary berarti yang berhubungan dengan Teknologi Informasi, Internet, dan virtual reality. Sedangkan Extension secara harfiah dapat disebut sebagai tindakan atau proses memperluas atau memperpanjang sesuatu. Itu bisa Perluasan area, waktu maupun ruang. Jadi Extension atau penyuluhan adalah sebuah mekanisme sentral dalam proses pembangunan pertanian, baik dari segi transfer teknologi dan pengembangan sumber daya manusia. Dari pengertian diatas dapat disimpulkan bahwa Cyber Extension merupakan media komunikasi inovasi baru yang bersifat hybrid dan konvergen yang memanfaatkan jaringan internet, komunikasi melalui komputer dan multimedia interaktif digital untuk menjembatani proses transformasi ilmu pengetahuan dan teknologi baru dibidang pertanian secara cepat."/>
+        <meta name="keywords" content="cyber, extension, informasi, pertanian, proses, secara, teknologi, komunikasi, dapat, melalui, penyuluhan, adalah, jaringan, interaktif, pengetahuan, internet, transformasi, suatu, sebagai, mekanisme, media, ruang, dalam, komputer, cyber extension, ilmu pengetahuan, transformasi ilmu, informasi dan, teknologi informasi, proses transformasi, proses transformasi ilmu"/>
+        <meta name="author" content="Pusat Penyuluhan Pertanian, Badan Penyuluhan dan Pengembangan SDM Pertanian"/>
+        <meta name="designer" content="Pusat Penyuluhan Pertanian, Badan Penyuluhan dan Pengembangan SDM Pertanian"/>
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="http://cybex.pertanian.go.id/home/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="http://cybex.pertanian.go.id/home/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/css/layout.css" />
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/css/skeleton.css" />
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/css/base.css" />
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/css/drawer.css" />
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/css/prettyPhoto.css" />
+        <script type="text/javascript" src="http://cybex.pertanian.go.id/home/js/jquery.min.js"></script>
+        <script type="text/javascript" src="http://cybex.pertanian.go.id/home/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="http://cybex.pertanian.go.id/home/js/scriptbreaker-multiple-accordion-1.js"></script>
+        <script type="text/javascript" src="http://cybex.pertanian.go.id/home/js/jquery.bxslider/jquery.bxslider.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/js/jquery.bxslider/jquery.bxslider.css" />
+        <script type="text/javascript" src="http://cybex.pertanian.go.id/home/js/jquery.prettyPhoto.js"></script>
+        <script type="text/javascript" src="http://cybex.pertanian.go.id/home/mediaelement/mediaelement-and-player.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/mediaelement/mediaelementplayer.min.css" />
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/mediaelement/mejs-skins.css" />
+        <script type="text/javascript" src="http://cybex.pertanian.go.id/home/select2/select2-min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/select2/select2.css" />
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/calendar/cupertino/jquery-ui.min.css" />
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/calendar/fullcalendar.css" />
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/calendar/fullcalendar.print.css" />
+        <script type="text/javascript" src="http://cybex.pertanian.go.id/home/calendar/fullcalendar.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://cybex.pertanian.go.id/home/css/custom.css" />
+        <script language="JavaScript">
+        $(document).ready(function() {
+            $(".topnav").accordion({
+                accordion:true,
+                speed: 500,
+                closedSign: '+',
+                openedSign: '-'
+            });
+        });
+        </script>
+        <style type="text/css">
+        .liveWidget{
+
+            background-color:#F9F9F9;
+            border:2px solid #000;
+            height:25px;
+            padding:4px 8px;
+            position:relative;
+            width:130px;
+            cursor:default;
+            /* CSS3 rules for rounded corners, box and text shadows: */
+            -moz-border-radius:6px;
+            -webkit-border-radius:6px;
+            border-radius:6px;
+            -moz-box-shadow:0 0 3px #CCCCCC;
+            -webkit-box-shadow:0 0 3px #CCCCCC;
+            box-shadow:0 0 3px #CCCCCC;
+            text-shadow:0 2px 0 white;
+        }
+        .count{
+            color:#777777;
+            float:left;
+            font-size:24px;
+            font-weight:bold;
+            margin-top:-3px;
+            text-align:center;
+            width:30px;
+            padding-left:20px;
+            padding-right:10px;
+        }
+        .onlinelabel{
+            float:left;
+            font-size:10px;
+            padding:7px 0 0 7px;
+            text-transform:uppercase;
+        }
+        </style>
+            </head>
+    <body>
+        <!-- Header -->
+        <div id="header">
+            <div class="container">
+                <!--//
+                <div class="two columns"><div id="logo"></div></div>
+                <div class="three columns title"><span class="cyb">CYB-EXT</span><br/>CYBER EXTENSION
+                    <div class="title3">Kementerian Pertanian<br/>Badan Penyuluhan dan Pengembangan<br/>Sumber Daya manusia Pertanian</div>
+                </div>
+                //-->
+                <div class="five columns newtitle"><div id="newlogo"><img src="http://cybex.pertanian.go.id/user/images/uji-coba-4.gif" title="Cybex"></div></div>
+                <div class="six columns title2">Kementerian Pertanian<br/>Badan Penyuluhan dan Pengembangan<br/>Sumber Daya manusia Pertanian</div>
+                                <div id="pencarian2">
+                    <form action="http://cybex.pertanian.go.id/search" method="get" id="searching">
+                        <input name="inputSearch" type="text" class="formCari2">
+                        <input name="submit" type="submit" value="" class="go">
+                    </form>
+                    <div class="linkAtas2">
+                        <ul>
+                            <li><a href="#"><img src="http://cybex.pertanian.go.id/home/images/sitemap.png" alt="[=]" title="SiteMap"></a></li>
+                            <li><a href="#"><img src="http://cybex.pertanian.go.id/home/images/contact.png" alt="contact" title="Contact"></a></li>
+                            <li><a href="http://cybex.pertanian.go.id/admin/login"><img src="http://cybex.pertanian.go.id/home/images/login.png" alt="login" title="Login"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                            </div>
+        </div>
+        <!-- End Of Header -->
+
+        <div class="container">
+            <!-- Main Menu -->
+            <div id="mainMenu">
+            <nav id="nav_background">
+                <ul id="menu" class="primary_nav">
+                    <li><a href="http://cybex.pertanian.go.id">Beranda</a></li>
+                    <li><a href="http://cybex.pertanian.go.id/profil">Organisasi</a></li>
+                    <li><a href="http://cybex.pertanian.go.id/kebijakan/arsip">Kebijakan Penyuluhan</a></li>
+                    <li><a href="http://cybex.pertanian.go.id/materipenyuluhan/arsip">Materi Penyuluhan</a></li>
+                    <li><a href="http://cybex.pertanian.go.id/materilokalita/arsip">Materi Spesifik Lokalita</a></li>
+                    <li><a href="http://cybex.pertanian.go.id/teknologi/arsip">Diseminasi Teknologi Pertanian</a></li>
+                </ul>
+            </nav>
+            <script type="text/javascript">
+                function navigateTo(sel, target, newWindow) {
+                    var url = sel.options[sel.selectedIndex].value;
+                    if (newWindow) {
+                        window.open(url, target, '--- attributes here, see below ---');
+                    } else {
+                        window[target].location.href = url;
+                    }
+                }
+            </script>
+            <select name="pilihan" id="pilihan" onChange="navigateTo(this, 'window', false);">
+                <option value="#"><span class="putih">Main Menu</span></option>
+                <option value="#">Kebijakan Penyuluhan</option>
+                <option value="#">Materi Penyuluhan</option>
+                <option value="#">&nbsp; - Sub Menu Materi Penyuluhan 1</option>
+                <option value="#">&nbsp; - Sub Menu Materi Penyuluhan 2</option>
+                <option value="#">&nbsp; - Sub Menu Materi Penyuluhan 3</option>
+                <option value="#">Materi Spesifik Lokalita</option>
+                <option value="#">&nbsp; - Sub Menu Materi Spesifik Lokalita 1</option>
+                <option value="#">&nbsp; - Sub Menu Materi Spesifik Lokalita 2</option>
+                <option value="#">&nbsp; - Sub Menu Materi Spesifik Lokalita 3</option>
+            </select>
+            </div>
+            <!-- Main Menu -->
+            <!-- Slide Show -->
+<!-- Slide Show -->
+<div id="slide">
+	<ul class="topslider">
+					<li><img src="http://cybex.pertanian.go.id/files/mBOmAkik/20181009111646-penyuluh sahabat petani 2.jpg" /></li>
+					<li><img src="http://cybex.pertanian.go.id/files/FnXMXgfF/20140924094109-penyuluh.jpg" /></li>
+					<li><img src="http://cybex.pertanian.go.id/files/IkV1z2k8/20140924094036-baner1.jpg" /></li>
+					<li><img src="http://cybex.pertanian.go.id/files/CRc7XU6O/20140918060927-kacang.jpg" /></li>
+			</ul>
+</div>
+<!-- artikelBaru -->
+<div id="artikelBaru">
+    <div id="artikelBaruIsi">
+        <span class="sub">Materi Penyuluhan</span><span class="arsip" style="float:right;"><a href="http://cybex.pertanian.go.id/materipenyuluhan/arsip">+ ARSIP MATERI PENYULUHAN</a></span>
+        <div id="kolom">
+			<div class="carmp">
+				<span id="slider-prev" class="mpprev buttonmp"></span>
+				<span id="slider-next" class="mpnext buttonmp"></span>
+				<ul id="mpslider">
+									<li>
+					<div class="mpslidercontent">
+					<a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12014/opt-manggis-yang-sangat-membahayakan-dan-pengendaliannya"><img src="http://cybex.pertanian.go.id/files/iHNHx6J0/200x120_crop/20181031094343-OPT Manggis.jpg" alt="Opt Manggis Yang Sangat Membahayakan Dan Pengendaliannya" title="Opt Manggis Yang Sangat Membahayakan Dan Pengendaliannya"></a>
+					<div class="width200 height20" style="clear:left; padding:5px;"><a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12014/opt-manggis-yang-sangat-membahayakan-dan-pengendaliannya">Opt Manggis Yang Sangat Membahayakan Dan Pengendaliannya</a></div>
+					</div>
+					</li>
+									<li>
+					<div class="mpslidercontent">
+					<a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12013/pengendalian-opt-secara-aman"><img src="http://cybex.pertanian.go.id/files/1crZX9DN/200x120_crop/20181031093736-Hama Thrips.jpg" alt="Pengendalian Opt Secara Aman " title="Pengendalian Opt Secara Aman "></a>
+					<div class="width200 height20" style="clear:left; padding:5px;"><a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12013/pengendalian-opt-secara-aman">Pengendalian Opt Secara Aman </a></div>
+					</div>
+					</li>
+									<li>
+					<div class="mpslidercontent">
+					<a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12012/hama-tanaman-penyerang-durian-dan-pengendaliannya"><img src="http://cybex.pertanian.go.id/files/0bSVZaKB/200x120_crop/20181031082523-Hama Durian.jpg" alt="Hama Tanaman Penyerang Durian Dan Pengendaliannya" title="Hama Tanaman Penyerang Durian Dan Pengendaliannya"></a>
+					<div class="width200 height20" style="clear:left; padding:5px;"><a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12012/hama-tanaman-penyerang-durian-dan-pengendaliannya">Hama Tanaman Penyerang Durian Dan Pengendaliannya</a></div>
+					</div>
+					</li>
+									<li>
+					<div class="mpslidercontent">
+					<a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12011/pemangkasan-penyerbukan-bantuan-dan-penjarangan-buah-untuk-berproduksi-buah-durian-yang-baik"><img src="http://cybex.pertanian.go.id/files/AqMrOH0H/200x120_crop/20181031081643-Pemeliharaan Durian.jpg" alt="Pemangkasan, Penyerbukan Bantuan, Dan  Penjarangan Buah  Untuk Berproduksi Buah Durian Yang Baik" title="Pemangkasan, Penyerbukan Bantuan, Dan  Penjarangan Buah  Untuk Berproduksi Buah Durian Yang Baik"></a>
+					<div class="width200 height20" style="clear:left; padding:5px;"><a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12011/pemangkasan-penyerbukan-bantuan-dan-penjarangan-buah-untuk-berproduksi-buah-durian-yang-baik">Pemangkasan, Penyerbukan Bantuan, Dan  Penjarangan Buah  Untuk Berproduksi Buah Durian Yang Baik</a></div>
+					</div>
+					</li>
+									<li>
+					<div class="mpslidercontent">
+					<a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12010/penanaman-pengairan-pemupukan-dan-penyiangan-tanaman-durian-untuk-berproduksi-baik"><img src="http://cybex.pertanian.go.id/files/1xmCCN8f/200x120_crop/20181031080754-Benih Durian.png" alt="Penanaman, Pengairan, Pemupukan, Dan Penyiangan  Tanaman Durian Untuk Berproduksi Baik" title="Penanaman, Pengairan, Pemupukan, Dan Penyiangan  Tanaman Durian Untuk Berproduksi Baik"></a>
+					<div class="width200 height20" style="clear:left; padding:5px;"><a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12010/penanaman-pengairan-pemupukan-dan-penyiangan-tanaman-durian-untuk-berproduksi-baik">Penanaman, Pengairan, Pemupukan, Dan Penyiangan  Tanaman Durian Untuk Berproduksi Baik</a></div>
+					</div>
+					</li>
+									<li>
+					<div class="mpslidercontent">
+					<a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12009/pemupukan-pada-lahan-gambut-untuk-tanaman-pangan"><img src="http://cybex.pertanian.go.id/files/sqVwE7X1/200x120_crop/20181030112925-gambar untuk pemupukan.jpg" alt="Pemupukan Pada Lahan Gambut Untuk Tanaman Pangan" title="Pemupukan Pada Lahan Gambut Untuk Tanaman Pangan"></a>
+					<div class="width200 height20" style="clear:left; padding:5px;"><a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12009/pemupukan-pada-lahan-gambut-untuk-tanaman-pangan">Pemupukan Pada Lahan Gambut Untuk Tanaman Pangan</a></div>
+					</div>
+					</li>
+									<li>
+					<div class="mpslidercontent">
+					<a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12008/pemeliharaan-kecambah-pada-kemiri-sunan"><img src="http://cybex.pertanian.go.id/files/tlgI2RrI/200x120_crop/20181030100053-gb kecambah kemiri sunan.gif" alt="Pemeliharaan Kecambah Pada Kemiri Sunan" title="Pemeliharaan Kecambah Pada Kemiri Sunan"></a>
+					<div class="width200 height20" style="clear:left; padding:5px;"><a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12008/pemeliharaan-kecambah-pada-kemiri-sunan">Pemeliharaan Kecambah Pada Kemiri Sunan</a></div>
+					</div>
+					</li>
+									<li>
+					<div class="mpslidercontent">
+					<a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12007/inovasi-pengelolaan-air-pada-lahan-rawa"><img src="http://cybex.pertanian.go.id/files/bJfuqd8Q/200x120_crop/20181029223824-14_rawa.jpg" alt="Inovasi Pengelolaan Air Pada Lahan Rawa" title="Inovasi Pengelolaan Air Pada Lahan Rawa"></a>
+					<div class="width200 height20" style="clear:left; padding:5px;"><a href="http://cybex.pertanian.go.id/materipenyuluhan/detail/12007/inovasi-pengelolaan-air-pada-lahan-rawa">Inovasi Pengelolaan Air Pada Lahan Rawa</a></div>
+					</div>
+					</li>
+								</ul>
+			</div>
+        </div>
+    </div>
+</div>
+<!-- artikelBaru -->
+
+<div id="konten">
+    <!-- Kolom 1 -->
+    <div id="kolom1" class="five columns">
+        <div id="kolom1isi">
+            <div class="sub">Database Penyuluhan <hr></div>
+            <ul class="topnav">
+                                <li class="subTree">                                <a href="#">Kelembagaan Penyuluhan</a>                                <ul>                                <li><a href="#">Kelembagaan Penyuluhan Provinsi</a></li>                                <li><a href="#">Kelembagaan Penyuluhan Kabupaten / Kota</a></li>                                <li><a href="#">Kelembagaan Penyuluhan Kecamatan</a></li>                                </ul>                                </li>                                <li class="subTree">                                <a href="#">Kelembagaan Petani</a>                                <ul>                                <li><a href="#">Poktan</a></li>                                <li><a href="#">Gapoktan</a></li>                                <li><a href="#">Kelembagaan Usaha Tani</a></li>                                </ul>                                </li>                                <li class="subTree">                                <a href="#">Ketenagaan Penyuluhan</a>                                <ul>                                <li><a href="#">THL - TB Penyuluh Pertanian</a></li>                                <li><a href="#">Penyuluh Swadaya</a></li>                                <li><a href="#">Penyuluh Pertanian PNS</a></li>                                </ul>                                </li>                                <li class="subTree">                                <a href="#">Sarana & Prasarana</a>                                <ul>                                <li><a href="#">Mobil</a></li>                                <li><a href="#">Kendaraan Roda Dua</a></li>                                <li><a href="#">Alat Pengolah Data Cybex</a></li>                                <li><a href="#">Soil Tester</a></li>                                </ul>                                </li>                            </ul>
+            <p id="jarak"></p>
+			<div class="sub"><a class="sub3" style="color: #31860b !important; text-decoration:none;" href="/shoutbox/arsip">Rembug Admin</a> <hr></div>
+            <iframe onload="resizeIframe(this)" width="100%" height="370px" src="http://cybex.pertanian.go.id/shoutbox"></iframe>
+			<p id="jarak"></p>
+			<div class="sub">Profil Kita <span class="arsip" style="float:right;"><a href="http://cybex.pertanian.go.id/profilkita/arsip">+ ARSIP</a></span><hr></div>
+						<p style="margin-top:10px;"><span class="linkprofilkita"><a style="color:black; text-decoration:none;" href="http://cybex.pertanian.go.id/profilkita/detail/9219/provinsi-sulawesi-utara-ksu-mokapog-ollot-kep-berprestasi-kabupaten-bolaang-mongondow-utara">PROVINSI  SULAWESI  UTARA (KSU) MOKAPOG OLLOT (KEP) BERPRESTASI KABUPATEN  BOLAANG MONGONDOW UTARA</a></span></p>
+            			<p style="margin-top:10px;"><span class="linkprofilkita"><a style="color:black; text-decoration:none;" href="http://cybex.pertanian.go.id/profilkita/detail/9218/provinsi-sulawesi-selatan-koperasi-tani-harapan-jaya-kep-berprestasi-kabupaten-maros"> PROVINSI SULAWESI SELATAN KOPERASI TANI HARAPAN JAYA (KEP) BERPRESTASI KABUPATEN MAROS</a></span></p>
+            			<p style="margin-top:10px;"><span class="linkprofilkita"><a style="color:black; text-decoration:none;" href="http://cybex.pertanian.go.id/profilkita/detail/9217/provinsi-nusa-tenggara-timur-ksu-mada-rebu-kep-berprestasi-kabupaten-sikka">PROVINSI NUSA TENGGARA TIMUR (KSU) MADA REBU (KEP) BERPRESTASI KABUPATEN SIKKA</a></span></p>
+            			<p style="margin-top:10px;"><span class="linkprofilkita"><a style="color:black; text-decoration:none;" href="http://cybex.pertanian.go.id/profilkita/detail/9216/provinsi-ntb-koperasi-serba-usaha-ksu-usaha-bersama-kep-berprestasi-kabupaten-lombok-barat">PROVINSI NTB KOPERASI SERBA USAHA (KSU) USAHA BERSAMA (KEP) BERPRESTASI KABUPATEN LOMBOK BARAT</a></span></p>
+            			<p style="margin-top:10px;"><span class="linkprofilkita"><a style="color:black; text-decoration:none;" href="http://cybex.pertanian.go.id/profilkita/detail/9215/provinsi-gorontalo-koperasi-insan-mandiri-kep-berprestasi-kabupaten-bone-bolango">PROVINSI GORONTALO KOPERASI INSAN MANDIRI (KEP) BERPRESTASI KABUPATEN BONE BOLANGO</a></span></p>
+            			<p id="jarak"></p>
+            <div class="sub">Pengunjung <hr></div>
+            <div id="box">
+				<ul>
+					<li><div style="float: left; width:145px">Pengunjung Kemarin</div>  <div style="text-align:right !important; float:left">222 </div></li>
+					<li><div style="float: left; width:145px">Pengunjung Minggu Ini</div>  <div style="text-align:right !important; float:left">742 </div></li>
+					<li><div style="float: left; width:145px">Pengunjung Bulan Ini</div>  <div style="text-align:right !important; float:left">9817 </div></li>
+					<li><div style="float: left; width:145px">Total Pengunjung</div>  <div style="text-align:right !important; float:left">28066 </div></li>
+					<li><div style="float:left; margin-top:10px; margin-bottom:10px;"><table width:"100%" border="1"><tr><td><div style="float: left; width:70px"></div></td><td><div style="float: left; width:70px"></div></td><td><div style="float: left; width:70px"></div></td></tr></table></div></li>
+					<li><div style="float: left; width:145px">Admin Online</div>  <div style="text-align:right !important; float:left; font-style:italic; font-size:12px;">12166_bojonggambir, 12166_sukahening, 13192_buayan, admin_pidie, 04080_kandis, 13191_pejawaran, 15235_kedungjajang, admin_mapanget, 14225_karangmojo </div></li>
+				</ul>
+			</div>
+        </div>
+    </div>
+    <!-- Kolom 1 -->
+
+    <!-- Kolom 2 -->
+    <div id="kolom2" class="nine columns">
+        <div id="kolom2isi">
+			<span class="sub">Materi Spesifik Lokalita</span><span class="arsip" style="float:right;"><a href="http://cybex.pertanian.go.id/materilokalita/arsip">+ ARSIP SPESIFIK LOKALITA</a></span>
+						<teknologi>
+			<img src="http://cybex.pertanian.go.id/files/SZKO3F4k/208x133_crop/20181031134044-tricoderma.jpeg" alt="4" class="imgArticle">
+			<div><span class="titleArticle"><a href="http://cybex.pertanian.go.id/materilokalita/detail/21760/manfaat-trichoderma-sebagai-musuh-alami-hama-dan-penyakit-tanaman-kedelai">Manfaat Trichoderma Sebagai Musuh Alami Hama Dan Penyakit Tanaman Kedelai</a></span></div>
+			</teknologi>
+						<teknologi>
+			<img src="http://cybex.pertanian.go.id/files/2YJhDg2x/208x133_crop/20181031132454-Pic tanaman sehat.jpg" alt="4" class="imgArticle">
+			<div><span class="titleArticle"><a href="http://cybex.pertanian.go.id/materilokalita/detail/21759/budidaya-tanaman-sehat-padi-dem-area-di-desa-baderan-geneng-ngawi">Budidaya Tanaman Sehat Padi (dem Area Di Desa Baderan, Geneng, Ngawi)</a></span></div>
+			</teknologi>
+			            <p class="jarak20"></p>
+            <ul class="listPenyuluhan">
+                                <li><a href="http://cybex.pertanian.go.id/materilokalita/detail/21758/unit-pengolah-pupuk-organik-uppo-sebagai-pendukung-kegiatan-upsus-di-kecamatan-wonosalam">Unit Pengolah Pupuk Organik (uppo) Sebagai Pendukung Kegiatan Upsus Di Kecamatan Wonosalam</a></li>
+				                <li><a href="http://cybex.pertanian.go.id/materilokalita/detail/21757/gerakan-masal-sebagai-strategi-pengendalian-wereng-batang-coklat-di-kecamatan-wonosalam">Gerakan Masal Sebagai Strategi Pengendalian Wereng Batang Coklat  Di Kecamatan Wonosalam</a></li>
+				            </ul>
+
+            <div id="kolom4">
+                <div style="width:100%" class="sub">Diseminasi Teknologi Pertanian<span class="arsip" style="float:right;"><a href="http://cybex.pertanian.go.id/teknologi/arsip">+ ARSIP DISEMINASI</a></span></div>
+                                <teknologi>
+                <a href="http://cybex.pertanian.go.id/teknologi/detail/2313/varietas-unggul-baru-kedelai-tahan-naungan"><img src="http://cybex.pertanian.go.id/files/TowXEjll/208x133_crop/20181029113908-Foto kedelai Dena_cr.png" alt="Varietas Unggul Baru Kedelai Tahan Naungan" title="Varietas Unggul Baru Kedelai Tahan Naungan" class="imgArticle"></a>
+                <div><span class="titleArticle"><a href="http://cybex.pertanian.go.id/teknologi/detail/2313/varietas-unggul-baru-kedelai-tahan-naungan">Varietas Unggul Baru Kedelai Tahan Naungan</a></span></div>
+                </teknologi>
+                                <teknologi>
+                <a href="http://cybex.pertanian.go.id/teknologi/detail/2312/teknologi-produksi-benih-padi-bermutu"><img src="http://cybex.pertanian.go.id/files/Y8tOzkM4/208x133_crop/20181023142650-perbenihan padi ES Singakwang (1).jpg" alt="Teknologi Produksi Benih Padi Bermutu" title="Teknologi Produksi Benih Padi Bermutu" class="imgArticle"></a>
+                <div><span class="titleArticle"><a href="http://cybex.pertanian.go.id/teknologi/detail/2312/teknologi-produksi-benih-padi-bermutu">Teknologi Produksi Benih Padi Bermutu</a></span></div>
+                </teknologi>
+                            </div>
+
+			<div id="kolom4">
+                        <div style="width:100%" class="sub">Gerbang Nasional<span class="arsip" style="float:right;"><a href="http://cybex.pertanian.go.id/gerbangnasional/arsip">+ ARSIP GERBANG NASIONAL</a></span></div>
+			<gerbangkiri>
+                <img src="http://cybex.pertanian.go.id/files/yGbicNGv/150x96_crop/20181019135733-kalsel.jpg" alt="4" class="imgArticle">
+                <div class="height100"><span class="titleArticle"><a href="http://cybex.pertanian.go.id/gerbangnasional/detail/9158/penumbuhkembangan-penyuluh-swadaya-dan-posluhdestingkatkan-fungsi-penyuluhan">Penumbuhkembangan Penyuluh Swadaya Dan Posluhdes,Tingkatkan Fungsi Penyuluhan</a></span></div>
+			</gerbangkiri>
+            			<gerbangkanan>
+				<ul class="listPenyuluhan">
+                                <li><a href="http://cybex.pertanian.go.id/gerbangnasional/detail/9156/entaskan-kemiskinan-program-bekerja-sasar-masyarakat-garut" alt="Entaskan Kemiskinan, Program Bekerja Sasar Masyarakat Garut" title="Entaskan Kemiskinan, Program Bekerja Sasar Masyarakat Garut">Entaskan Kemiskinan, Program Bekerja Sasar Masyarakat Garut</a></li>
+				                <li><a href="http://cybex.pertanian.go.id/gerbangnasional/detail/9155/rembug-utama-ktna-tingkat-nasional-momentum-bangkitnya-penyuluh-swadaya" alt="Rembug Utama Ktna Tingkat Nasional, Momentum Bangkitnya Penyuluh Swadaya" title="Rembug Utama Ktna Tingkat Nasional, Momentum Bangkitnya Penyuluh Swadaya">Rembug Utama KTNA Tingkat Nasional, Momentum Bangkitnya Peny...</a></li>
+				                <li><a href="http://cybex.pertanian.go.id/gerbangnasional/detail/9154/tingkatkan-kompetensi-penyuluh-pertanian-pertanian-provinsi-aceh-mengikuti-diklat-dasar-penyuluh-pertanian" alt="Tingkatkan Kompetensi, Penyuluh Pertanian Pertanian Provinsi Aceh Mengikuti Diklat Dasar Penyuluh Pertanian" title="Tingkatkan Kompetensi, Penyuluh Pertanian Pertanian Provinsi Aceh Mengikuti Diklat Dasar Penyuluh Pertanian">Tingkatkan Kompetensi, Penyuluh Pertanian Pertanian Provinsi...</a></li>
+				                <li><a href="http://cybex.pertanian.go.id/gerbangnasional/detail/9153/gerakan-tanam-padi-thlk-sebagai-upaya-percepatan-ltt-di-provinsi-gorontalo" alt="Gerakan Tanam Padi Thlk Sebagai Upaya Percepatan Ltt  Di Provinsi Gorontalo" title="Gerakan Tanam Padi Thlk Sebagai Upaya Percepatan Ltt  Di Provinsi Gorontalo">GERAKAN TANAM PADI THLK SEBAGAI UPAYA PERCEPATAN LTT  DI PRO...</a></li>
+				            </ul>
+			</gerbangkanan>
+			</div>
+
+			<div id="kolom4">
+                        <div style="width:100%" class="sub">Gerbang Daerah<span class="arsip" style="float:right;"><a href="http://cybex.pertanian.go.id/gerbangdaerah/arsip">+ ARSIP GERBANG DAERAH</a></span></div>
+			<gerbangkiri>
+                <img src="http://cybex.pertanian.go.id/files/7mHHgUFL/150x96_crop/20181031133356-bamer.jpg" alt="4" class="imgArticle">
+                <div class="height100"><span class="titleArticle"><a href="http://cybex.pertanian.go.id/gerbangdaerah/detail/17966/pemanfaatan-masa-kering-dengan-bawang-merah">Pemanfaatan Masa Kering Dengan Bawang Merah</a></span></div>
+			</gerbangkiri>
+			<gerbangkanan>
+				<ul class="listPenyuluhan">
+                                <li><a href="http://cybex.pertanian.go.id/gerbangdaerah/detail/17965/keakraban-di-slb-negeri-pembina-landasan-ulin-barat-kota-banjarbaru" alt="Keakraban Di Slb Negeri Pembina Landasan Ulin Barat Kota Banjarbaru" title="Keakraban Di Slb Negeri Pembina Landasan Ulin Barat Kota Banjarbaru">Keakraban di SLB Negeri Pembina Landasan Ulin Barat Kota Ban...</a></li>
+				                <li><a href="http://cybex.pertanian.go.id/gerbangdaerah/detail/17964/menimba-ilmu-di-kecamatan-tetangga" alt="Menimba Ilmu Di Kecamatan Tetangga" title="Menimba Ilmu Di Kecamatan Tetangga">MENIMBA ILMU DI KECAMATAN TETANGGA</a></li>
+				                <li><a href="http://cybex.pertanian.go.id/gerbangdaerah/detail/17963/rembug-tani-kegiatan-adaptasi-teknologi-spesifik-lokasi-wkkp-bpp-sukahening" alt="Rembug Tani Kegiatan Adaptasi Teknologi Spesifik Lokasi Wkkp Bpp Sukahening" title="Rembug Tani Kegiatan Adaptasi Teknologi Spesifik Lokasi Wkkp Bpp Sukahening">REMBUG TANI KEGIATAN ADAPTASI TEKNOLOGI SPESIFIK LOKASI WKKP...</a></li>
+				                <li><a href="http://cybex.pertanian.go.id/gerbangdaerah/detail/17962/pelatihan-pemeriksaan-kesehatan-ternak-sapi-di-desa-desa-munggut-kecamatan-padas-kabupaten-ngawi" alt="Pelatihan Pemeriksaan Kesehatan Ternak Sapi  Di Desa Desa Munggut Kecamatan Padas Kabupaten Ngawi" title="Pelatihan Pemeriksaan Kesehatan Ternak Sapi  Di Desa Desa Munggut Kecamatan Padas Kabupaten Ngawi">PELATIHAN PEMERIKSAAN KESEHATAN TERNAK SAPI  DI DESA DESA MU...</a></li>
+				            </ul>
+			</gerbangkanan>
+            			</div>
+
+        </div>
+        <p class="jarakTinggiBawah"></p>
+    </div>
+    <!-- Kolom 2 -->
+
+    <!-- Kolom 3 -->
+    <div id="kolom3" class="five columns">
+        <div id="kolom3isi">
+            <div class="sub">Pengumuman <span class="arsip" style="float:right;"><a href="http://cybex.pertanian.go.id/pengumuman/arsip">+ ARSIP</a></span><hr></div>
+            <ul id="listKanan">
+                                <li><a href="http://cybex.pertanian.go.id/pengumuman/detail/74/1-materi-workshop-penulisan-arch-hotel-20-sd-22-nov-2017">1. Materi Workshop Penulisan, Arch Hotel, 20 S.d 22 Nov 2017										<img width="15px" src="http://cybex.pertanian.go.id/home/images/knewstuff.png">
+					</a>
+				</li>
+                                <li><a href="http://cybex.pertanian.go.id/pengumuman/detail/70/integrasi-bpp-dan-penyuluh-pertanian-dalam-programkegiatan-kementerian-pertanian">Integrasi Bpp Dan Penyuluh Pertanian Dalam Program/kegiatan Kementerian Pertanian										<img width="15px" src="http://cybex.pertanian.go.id/home/images/knewstuff.png">
+					</a>
+				</li>
+                                <li><a href="http://cybex.pertanian.go.id/pengumuman/detail/63/percepatan-penyelenggaraan-penyuluhan">Percepatan Penyelenggaraan Penyuluhan										<img width="15px" src="http://cybex.pertanian.go.id/home/images/knewstuff.png">
+					</a>
+				</li>
+                                <li><a href="http://cybex.pertanian.go.id/pengumuman/detail/62/surat-kepala-bppsdmp-perihal-keputusan-menteri-pertanian-tentang-thl-tbpp-penyuluh-pertanian-tahun-2017">Surat Kepala Bppsdmp Perihal Keputusan Menteri Pertanian Tentang Thl-tbpp Penyuluh Pertanian Tahun 2017										<img width="15px" src="http://cybex.pertanian.go.id/home/images/knewstuff.png">
+					</a>
+				</li>
+                                <li><a href="http://cybex.pertanian.go.id/pengumuman/detail/58/surat-menteri-tentang-penyelenggaraan-penyuluhan-pasca-uu-no-23-th-2014">Surat Menteri Tentang Penyelenggaraan Penyuluhan Pasca Uu No 23 Th 2014										<img width="15px" src="http://cybex.pertanian.go.id/home/images/knewstuff.png">
+					</a>
+				</li>
+                                <li><a href="http://cybex.pertanian.go.id/pengumuman/detail/54/surat-kepala-bppsdmp-tentang-konsolidasi-dan-pendayagunaan-alsintan">Surat Kepala Bppsdmp Tentang Konsolidasi Dan Pendayagunaan Alsintan										<img width="15px" src="http://cybex.pertanian.go.id/home/images/knewstuff.png">
+					</a>
+				</li>
+                            </ul>
+
+            <div class="sub">Gallery Photo<hr></div>
+			<div id="galleryphoto">
+						<img src="http://cybex.pertanian.go.id/files/lvbjinGr/200x200/20180309010722-aww.jpg" title="Kunjungan Peserta Bimtek"/>
+			            <div id='calendar'></div>
+			</div>
+			<hr />
+			<p id="jarak"></p>
+            <div class="sub marginbottom20">Video <span class="arsip" style="float:right;"><a href="http://cybex.pertanian.go.id/video/arsip">+ ARSIP VIDEO</a></span><hr></div>
+			<video id="player1" width="200" height="200" controls="control" preload="none">
+								<source src="https://youtu.be/1AuTuF7_peA" type="video/youtube" />
+							</video>
+			<p id="jarak"></p>
+            <div class="sub marginbottom20">Audio <span class="arsip" style="float:right;"><a href="http://cybex.pertanian.go.id/audio/arsip">+ ARSIP AUDIO</a></span><hr></div>
+			<audio id="player2" width="200" height="50" controls="control" preload="none">
+								<source src="http://www.youtube.com/watch?v=5bepLjMxE4k" type="audio/youtube" />
+							</audio>
+			<p id="jarak"></p><p id="jarak"></p>
+			<div class="sub marginbottom20">Media Cetak <span class="arsip" style="float:right;"><a href="http://cybex.pertanian.go.id/cetak/arsip">+ ARSIP MEDIA CETAK</a></span><hr></div>
+						<div class="gCetak">
+				<img src="http://cybex.pertanian.go.id/files/2tfM5S4e/85x85_crop/20180129091156-ekstensia 15_001.jpg">
+				<div class="gCetakTitle">
+					<!--
+					<a href="http://cybex.pertanian.go.id">ekstensia edisi 15</a>
+					-->
+					<a href="http://cybex.pertanian.go.id/cetak/summary/88">ekstensia edisi 15</a>
+				</div>
+			</div>
+						<div class="gCetak">
+				<img src="">
+				<div class="gCetakTitle">
+					<!--
+					<a href="http://cybex.pertanian.go.id">penerapan SNI Bahan Olahan Karet (BOKAR)</a>
+					-->
+					<a href="http://cybex.pertanian.go.id/cetak/summary/87">penerapan SNI Bahan Olahan Karet (BOKAR)</a>
+				</div>
+			</div>
+						<div class="gCetak">
+				<img src="">
+				<div class="gCetakTitle">
+					<!--
+					<a href="http://cybex.pertanian.go.id">teknologi mengatasi Kekurangan Hara Mikro Pada Tanaman Jeruk</a>
+					-->
+					<a href="http://cybex.pertanian.go.id/cetak/summary/86">teknologi mengatasi Kekurangan Hara Mikro Pada Tanaman Jeruk</a>
+				</div>
+			</div>
+						<div class="gCetak">
+				<img src="http://cybex.pertanian.go.id/files/FZrCmBi9/85x85_crop/20180129083526-COVER BROSUR  Pendampingan Pengawalan Program SIWAB-BROSUR 2017_001.jpg">
+				<div class="gCetakTitle">
+					<!--
+					<a href="http://cybex.pertanian.go.id">Brosur Pendampingan Pengawalan SIWAB</a>
+					-->
+					<a href="http://cybex.pertanian.go.id/cetak/summary/85">Brosur Pendampingan Pengawalan SIWAB</a>
+				</div>
+			</div>
+						<div class="gCetak">
+				<img src="http://cybex.pertanian.go.id/files/rDHqGCuo/85x85_crop/20160527085957-cover1 (FILEminimizer).jpg">
+				<div class="gCetakTitle">
+					<!--
+					<a href="http://cybex.pertanian.go.id">SOP SIMLUHTAN 2018</a>
+					-->
+					<a href="http://cybex.pertanian.go.id/cetak/summary/62">SOP SIMLUHTAN 2018</a>
+				</div>
+			</div>
+						<div class="gCetak">
+				<img src="http://cybex.pertanian.go.id/files/vlnDeHK7/85x85_crop/20160527085801-cover cyber_001 (FILEminimizer).png">
+				<div class="gCetakTitle">
+					<!--
+					<a href="http://cybex.pertanian.go.id">Panduan Cyber Extension</a>
+					-->
+					<a href="http://cybex.pertanian.go.id/cetak/summary/61">Panduan Cyber Extension</a>
+				</div>
+			</div>
+					</div>
+    </div>
+    <!-- Kolom 3 -->
+</div>
+            <div id="batasBawah"></div><!-- Batas Bawah -->
+            <!-- LINK -->
+            <div id="linkParent">
+                <ul id="linkChild">
+                                            <li><a target="_blank" href="http://apps00.pertanian.go.id"><img src="http://cybex.pertanian.go.id/files/uXbaY9nu/20161011082451-evaluh.jpg" alt="e-Petani"></a></li>
+                                            <li><a target="_blank" href="http://bppsdmp.pertanian.go.id/"><img src="http://cybex.pertanian.go.id/files/bjcAj39J/20161011082155-link bppsdmp2.jpg" alt="e-Petani"></a></li>
+                                            <li><a target="_blank" href="http://app2.pertanian.go.id/simluh2014"><img src="http://cybex.pertanian.go.id/files/hqABqzsi/20140918082038-simluh.png" alt="e-Petani"></a></li>
+                                            <li><a target="_blank" href="http://www.pertanian.go.id/"><img src="http://cybex.pertanian.go.id/files/8OChqSVS/20140918134110-Kementan2 edit.png" alt="e-Petani"></a></li>
+                                            <li><a target="_blank" href="#"><img src="http://cybex.pertanian.go.id/files/C4cQSMu8/20150227111346-sms center 1.jpg" alt="e-Petani"></a></li>
+                                            <li><a target="_blank" href="https://login.skype.com/login?message=signin_continue&return_url=https%3A%2F%2Fsecure.skype.com%2Fportal%2Foverview"><img src="http://cybex.pertanian.go.id/files/dDn42iIm/20141011013931-skype_logo.jpg" alt="e-Petani"></a></li>
+                                            <li><a target="_blank" href="http://katam.litbang.deptan.go.id/"><img src="http://cybex.pertanian.go.id/files/ZiBmk9Df/20140918133305-70.png" alt="e-Petani"></a></li>
+                                            <li><a target="_blank" href="http://www.bmkg.go.id/"><img src="http://cybex.pertanian.go.id/files/FYQvMvwm/20140918082139-bmkg.png" alt="e-Petani"></a></li>
+                                    </ul>
+            </div>
+            <!-- LINK -->
+        </div>
+
+        <!-- Footer -->
+        <div id="footer">
+            <div id="footerChild" class="container">
+                <div class="fourteen columns">
+                &copy; 2014<br>
+                Pusat Penyuluhan Pertanian, Badan Penyuluhan dan Pengembangan SDM Pertanian<br>
+                Jl. Harsono RM No.3 Pasar Minggu Jakarta Selatan, Telp/Fax:021-7804386
+                </div>
+                <div id="socialMedia" class="three columns">
+                    <ul>
+                        <li><a href="http://cybex.pertanian.go.id/rss"><img src="http://cybex.pertanian.go.id/home/images/rss.png" alt="rss"></a></li>
+                        <li><a href="#"><img src="http://cybex.pertanian.go.id/home/images/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="http://cybex.pertanian.go.id/home/images/fb.png" alt="facebook"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+         <!-- Footer -->
+        		<div class="panel">
+		<h3>Sekilas Info</h3>
+		        <p><p>surat kepala pusat penyuluhan tentang pendataan petani pemulia dapat di download pada menu pengumuman</p></p>
+                <p><p>surat Kepala Pusat Penyuluhan Pertanian tentang Pelaporan Potensi Panen melalui EPanen dapat di download pada link pengumuman</p></p>
+                <p><p>Surat Kepala BPPSDMP Perihal Keputusan Menteri Pertanian Tentang THL-TBPP Penyuluh Pertanian Tahun 2017<br />lampiran dapat di download&nbsp;&nbsp;di pengumuman</p></p>
+                <p><p>Permentan No 67 Tahun 2016 tentang Pembinaan Kelembagaan Petani dapat di download di menu kebijakan.</p></p>
+                <p><p style="text-align: justify;"><b>KEPADA KEPALA/KORLUH BP3K SE INDONESIA</b></p> <p style="text-align: justify;">Merujuk Surat Edaran Kepala Badan PPSDMP Nomor 10040/SM.010/I/11/2016 tentang Konsolidasi dan Pendayagunaan Alsintan, maka Kepala BP3K se Indonesia agar menugaskan para penyuluh pertanian untuk mengkonsolidasikan optimalisasi pemanfaatan alsintan di WKPP untuk memastikan percepatan olah tanah, tanam dan panen secara terorganisir. Surat dimaksud dapat dilihat di <b>PENGUMUMAN.</b></p></p>
+                <p><p>Folow dan Like Akun Resmi Kementerian Pertanian <br />-Facebook : Kementerian Pertanian Republik Indonesia<br />-Instagram : KEMENTERIANPERTANIAN <br />-Twitter : @kementan <br />-Youtube : Kementerian Pertanian RI</p></p>
+                <p><p>Kepada seluruh admin SIMLUH, untuk update/input data selain melalui alamat app1.pertanian.go.id/simluh2014, dapat juga melalui app2.pertanian.go.id/simluh2014 atau aplikasi2.pertanian.go.id/simluh2014, hal ini dimaksudkan agar proses input/update dapat berjalan dengan lancar.</p></p>
+        	</div>
+	<a class="trigger" href="#">Info</a>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".trigger").click(function(){
+			$(".panel").toggle("fast");
+			$(this).toggleClass("active");
+			return false;
+		});
+				$(".panel").toggle("fast");
+		$(".trigger").toggleClass("active");
+			});
+	</script>
+		<script type="text/javascript">
+  function resizeIframe(iframe) {
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+  }
+</script>
+	<script type="text/javascript">
+	function moveToDay(date){
+	var m_names = new Array("01", "02", "03",
+"04", "05", "06", "07", "08", "09",
+"10", "11", "12");
+	var d = new Date(date);
+	var curr_date = d.getDate();
+	var curr_month = d.getMonth();
+	var curr_year = d.getFullYear();
+	var tgl = curr_year + "-" + m_names[curr_month] + "-" + curr_date;
+	location.href = 'http://cybex.pertanian.go.id/gallery/tanggal/' + tgl;
+}
+	$(document).ready(function(){
+		$('.topslider').bxSlider({
+		  auto: true
+		});
+
+		$('#mpslider').bxSlider({
+		minSlides: 4,
+		maxSlides: 4,
+		moveSlides: 1,
+		slideWidth: 210,
+		slideMargin: 10,
+		captions: false,
+		pager: false,
+		nextSelector: '#slider-next',
+		prevSelector: '#slider-prev',
+		useCSS: false,
+		nextText: '>',
+		prevText: '<'
+		});
+	});
+	var player = new MediaElementPlayer('#player1');
+	var player2 = new MediaElementPlayer('#player2');
+	$('#calendar').fullCalendar({
+        // put your options and callbacks here
+		/*
+		dayClick: function(date, allDay, jsEvent, view) {
+			if (allDay) {
+				// Clicked on the entire day
+				$('#calendar').fullCalendar('clientEvents', function(event) {
+				var startDate = new Date(event.start.getFullYear(), event.start.getMonth(), event.start.getDay(), 0, 0, 0).getTime();
+				var clickDate = new Date(date.getFullYear(), date.getMonth(), date.getDay(), 0, 0, 0).getTime();
+					if(startDate == clickDate) {
+						alert(event.url);
+					}
+					else
+					{
+						return false;
+					}
+				});
+			}
+		},
+		*/
+		header: {
+            left: 'prev,next today',
+            center: '',
+			right: 'title'
+        },
+		dayNames: ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jum\'at', 'Sabtu'],
+		dayNamesShort: ['Ming','Sen','Sel','Rab','Kam','Jum','Sab'],
+		events: [{"id":"20141104","start":"2014-11-04","event":"Berita Foto Tanggal 04-11-2014","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2014-11-04"},{"id":"20141105","start":"2014-11-05","event":"Berita Foto Tanggal 05-11-2014","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2014-11-05"},{"id":"20141226","start":"2014-12-26","event":"Berita Foto Tanggal 26-12-2014","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2014-12-26"},{"id":"20150116","start":"2015-01-16","event":"Berita Foto Tanggal 16-01-2015","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2015-01-16"},{"id":"20150309","start":"2015-03-09","event":"Berita Foto Tanggal 09-03-2015","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2015-03-09"},{"id":"20150427","start":"2015-04-27","event":"Berita Foto Tanggal 27-04-2015","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2015-04-27"},{"id":"20150428","start":"2015-04-28","event":"Berita Foto Tanggal 28-04-2015","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2015-04-28"},{"id":"20150815","start":"2015-08-15","event":"Berita Foto Tanggal 15-08-2015","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2015-08-15"},{"id":"20150818","start":"2015-08-18","event":"Berita Foto Tanggal 18-08-2015","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2015-08-18"},{"id":"20150921","start":"2015-09-21","event":"Berita Foto Tanggal 21-09-2015","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2015-09-21"},{"id":"20151116","start":"2015-11-16","event":"Berita Foto Tanggal 16-11-2015","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2015-11-16"},{"id":"20151117","start":"2015-11-17","event":"Berita Foto Tanggal 17-11-2015","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2015-11-17"},{"id":"20160104","start":"2016-01-04","event":"Berita Foto Tanggal 04-01-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-01-04"},{"id":"20160314","start":"2016-03-14","event":"Berita Foto Tanggal 14-03-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-03-14"},{"id":"20160321","start":"2016-03-21","event":"Berita Foto Tanggal 21-03-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-03-21"},{"id":"20160511","start":"2016-05-11","event":"Berita Foto Tanggal 11-05-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-05-11"},{"id":"20160512","start":"2016-05-12","event":"Berita Foto Tanggal 12-05-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-05-12"},{"id":"20160525","start":"2016-05-25","event":"Berita Foto Tanggal 25-05-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-05-25"},{"id":"20160601","start":"2016-06-01","event":"Berita Foto Tanggal 01-06-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-06-01"},{"id":"20160712","start":"2016-07-12","event":"Berita Foto Tanggal 12-07-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-07-12"},{"id":"20160719","start":"2016-07-19","event":"Berita Foto Tanggal 19-07-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-07-19"},{"id":"20160810","start":"2016-08-10","event":"Berita Foto Tanggal 10-08-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-08-10"},{"id":"20160818","start":"2016-08-18","event":"Berita Foto Tanggal 18-08-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-08-18"},{"id":"20160909","start":"2016-09-09","event":"Berita Foto Tanggal 09-09-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-09-09"},{"id":"20161123","start":"2016-11-23","event":"Berita Foto Tanggal 23-11-2016","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2016-11-23"},{"id":"20170105","start":"2017-01-05","event":"Berita Foto Tanggal 05-01-2017","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2017-01-05"},{"id":"20170116","start":"2017-01-16","event":"Berita Foto Tanggal 16-01-2017","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2017-01-16"},{"id":"20170613","start":"2017-06-13","event":"Berita Foto Tanggal 13-06-2017","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2017-06-13"},{"id":"20170721","start":"2017-07-21","event":"Berita Foto Tanggal 21-07-2017","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2017-07-21"},{"id":"20171120","start":"2017-11-20","event":"Berita Foto Tanggal 20-11-2017","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2017-11-20"},{"id":"20180309","start":"2018-03-09","event":"Berita Foto Tanggal 09-03-2018","url":"http:\/\/cybex.pertanian.go.id\/gallery\/tanggal\/2018-03-09"}]    })
+	</script>
+	<style>
+		#calendar {
+    width: 200px;
+    margin: 0 auto;
+    font-size: 10px;
+}
+.fc-header-title h2 {
+    font-size: .9em;
+    white-space: normal !important;
+	margin-top: -10px;
+	color:#31860b;
+	text-shadow: none;
+	font-family: inherit;
+}
+.fc-view-month .fc-event, .fc-view-agendaWeek .fc-event {
+    font-size: 0;
+    overflow: hidden;
+    height: 2px;
+}
+.fc-view-agendaWeek .fc-event-vert {
+    font-size: 0;
+    overflow: hidden;
+    width: 2px !important;
+}
+.fc-agenda-axis {
+    width: 20px !important;
+    font-size: .7em;
+}
+
+.fc-button-content {
+    padding: 0;
+}
+.fc-grid .fc-day-number a{
+	color:#000;
+	}
+
+.fc-grid .fc-day-number a:hover{
+	color:#F60;
+	}
+.fc-header-center {
+            text-align: center;
+            display: none;
+        }
+    #slide .bx-wrapper
+    {
+    	padding: 0;
+    }
+    .bx-wrapper .bx-viewport
+    {
+    	border: 0;
+    	left: 0;
+    }
+    .bx-loading
+    {
+    	display: none;
+    }
+	</style>
+        
+</html>

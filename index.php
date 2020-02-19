@@ -2,6 +2,8 @@
 require_once 'config.php';
 require_once ROOT_PATH.'/lib/dao_utility.php';
 require_once ROOT_PATH.'/lib/mysqlDao.php';
+require_once ROOT_PATH.'/lib/json_utility.php';
+require_once ROOT_PATH.'/lib/init.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,19 +12,43 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Suzuki Trada</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | <?php echo $objConf['DD_SITENAME']?></title>
+    <meta content="<?php echo $objConf['DD_DESCRIPTION']?>" name="description" />
+    <meta content="<?php echo $objConf['DD_KEYWORD']?>" name="keywords" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta content="telephone=no" name="format-detection" />
     <meta name="HandheldFriendly" content="true" />
+    <link rel="shortcut icon" href="/favicon.ico?<?php echo rand()?>" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/master.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/color.css?<?php echo rand()?>" />
     <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/styles.css?<?php echo rand()?>" />
-    <!-- <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/Corporate-Footer-Clean.css?<?php echo rand()?>" /> -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/theme.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/responsive.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/Corporate-Footer-Clean.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/plugins/headers/header.css?<?php echo rand()?>" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="<?php echo ROOT_URL?>/assets/plugins/slick/slick-theme.css?<?php echo rand()?>" />
     <!--[if lt IE 9 ]>
 <script src="<?php echo ROOT_URL ?>/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
 <![endif]-->
+    <style>
+    .banner {
+        width: auto;
+        margin: 0px auto;
+        margin-top: 150px;
+    }
+
+    @media (max-width: 700px) {
+        .banner {
+            margin-top: 100px
+        }
+    }
+    </style>
+
 </head>
 
 <body>
@@ -30,53 +56,63 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
     <?php
 require_once ('includes/header.php')
  ?>
-    <?php
-require_once ('includes/banner.php')
- ?>
+    <!-- banner -->
+    <div class="banner">
+        <?php
+        $varsl['LIMIT']=3;
+        $varsl['STATUS'] = 1 ;
+        $varsl['POS'] = 'SLIDER';
+        $list=getRecord('tbl_banners', $varsl);
+        // echo $list['SQL'];
+        foreach($list['RESULT'] as $list){
+        ?>
+        <div>
+            <img class="d-block w-100" src="<?php echo ROOT_URL.'/images/banner/'.$list['FILENAME'].'?var='.rand()?>">
+        </div>
+        <?php
+        }
+        ?>
+
+    </div>
+    </div>
+    <!-- end banner -->
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-advantages-1">
-                    <section class="b-advantages-1 active"><i class="b-advantages-1__icon flaticon-gearbox"></i>
-                        <h3 class="b-advantages-1__title">Text Drive</h3>
-                        <div class="b-advantages-1__info">lorem ipsum is nisi aliquip ex consequat duis velit esse cillum
-                            dolore fugiat nulla pariatur excepteur sint occaecat.
-                        </div>
-                        <!-- <span class="ui-decor-2">
-                        </span> -->
-                    </section>
-                    <!-- end .b-advantages-->
-                    <section class="b-advantages-1 active"><i class="b-advantages-1__icon flaticon-wrench"></i>
-                        <h3 class="b-advantages-1__title">Booking Service</h3>
-                        <div class="b-advantages-1__info">lorem ipsum is nisi aliquip ex consequat duis velit esse cillum
-                            dolore fugiat nulla pariatur excepteur sint occaecat.
-                        </div>
-                        <!-- <span class="ui-decor-2">
-                        </span> -->
-                    </section>
-                    <!-- end .b-advantages-->
-                    <section class="b-advantages-1 active"><i class="b-advantages-1__icon flaticon-technology"></i>
-                        <h3 class="b-advantages-1__title">Call Center</h3>
-                        <div class="b-advantages-1__info">lorem ipsum is nisi aliquip ex consequat duis velit esse cillum
-                            dolore fugiat nulla pariatur excepteur sint occaecat.
-                        </div>
-                        <!-- <span class="ui-decor-2">
-                        </span> -->
-                    </section>
-                    <!-- end .b-advantages-->
-                    <section class="b-advantages-1 active"><i class="b-advantages-1__icon flaticon-calculator"></i>
-                        <h3 class="b-advantages-1__title">Simulasi Kredit</h3>
-                        <div class="b-advantages-1__info">lorem ipsum is nisi aliquip ex consequat duis velit esse cillum
-                            dolore fugiat nulla pariatur excepteur sint occaecat.
-                        </div>
-                        <!-- <span class="ui-decor-2">
-                        </span> -->
-                    </section>
-                    <!-- end .b-advantages-->
+    <div class="section-default Service">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 col-sm-3">
+                    <a href="<?php echo ROOT_URL?>/test-drive.php">
+                        <section class="b-advantages-3">
+                            <i class="b-advantages-3__icon flaticon-car-driver"></i>
+                            <h3 class="b-advantages-3__title">Test Drive</h3>
+                        </section>
+                    </a>
                 </div>
-                <!-- end .section-advantages-1-->
+                <div class="col-xs-3 col-sm-3">
+                    <a href="tel:02122808000">
+                        <section class="b-advantages-3">
+                            <i class="b-advantages-3__icon flaticon-screwdriver-and-wrench"></i>
+                            <h3 class="b-advantages-3__title">Booking Servis</h3>
+                        </section>
+                    </a>
+                </div>
+                <div class="col-xs-3 col-sm-3">
+                    <a href="<?php echo ROOT_URL?>/mobil.php">
+                        <section class="b-advantages-3">
+                            <i class="b-advantages-3__icon flaticon-car-black-side-view-pointing-left"></i>
+                            <h3 class="b-advantages-3__title">Beli Mobil</h3>
+                        </section>
+                    </a>
+                </div>
+                <div class="col-xs-3 col-sm-3">
+                    <a href="https://www.sfi.co.id/credit_simulation" target="blank">
+                        <section class="b-advantages-3">
+                            <i class="b-advantages-3__icon flaticon-calculator"></i>
+                            <h3 class="b-advantages-3__title">Simulasi Kredit</h3>
+                        </section>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -85,37 +121,53 @@ require_once ('includes/banner.php')
             <div class="row">
                 <div class="col-xs-12">
                     <div class="text-center">
-                        <h2 class="ui-title-block">Penjualan Terbaik</h2>
-                        <div class="ui-subtitle-block">Tempor incididunt labore dolore magna aliqua sed ipsum</div>
-                        <div class="ui-decor"></div>
+                        <h2 class="ui-title-block">Produk Unggulan Kami</h2>
+                        <div class="ui-subtitle-block">Harga Sewaktu-waktu Dapat Berubah Tanpa Pemberitahuan</div>
+                        <!-- <div class="ui-decor"></div> -->
+                        </br>
+                        </br>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                <?php 
-                for($i=0; $i < 6; $i++){
+                <?php
+                $var ['LIMIT'] = 6;
+                // $var['CATEGORY'] = '3';
+                $list = getRecord('tbl_product', $var);
+                foreach($list['RESULT'] as $list){
                 ?>
                 <div class="col-6 col-md-4 col-xs-6" id="col-card-produk">
                     <div class="card" id="card-produk">
-                        <img class="img-fluid card-img-top w-100 d-block" data-bs-hover-animate="pulse" id="foto-produk"
-                            src="https://suzukitrada.sketsahouse.com/images/product/a0c8895e061573a74ffb50901d750c42.jpg?var=844889498">
+                        <div class="bg-color-img">
+                            <img class="img-fluid card-img-top w-100 d-block" id="foto-produk"
+                                src="<?php echo  ROOT_URL.'/images/product/'.$list['IMAGE'].'?var='.rand()?>">
+                        </div>
                         <div class="card-body" id="card-body-produk">
-                            <h4 class="card-title" id="card-title-produk">New SX4-Cross</h4>
+                            <a href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>">
+                                <h4 class="card-title" id="card-title-produk"><?php echo $list['PRODUCT'] ?></h4>
+                            </a>
                             <!-- <span class="d-flex d-md-none d-lg-none d-xl-none justify-content-center"
                                 id="span-produk-mobile">Harga Mulai Dari</span> -->
                             <div class="list-group list-group-horizontal text-center" id="list-card">
                                 <a class="list-group-item list-group-item-action d-xl-flex justify-content-xl-center"
                                     id="list-group-harga">
-                                    <span class="harga">Rp. 291.000.000</span></a>
+                                    <span class="harga">Rp. <?php echo $list['PRICE'] ?></span></a>
                                 <a class="list-group-item list-group-item-action d-none d-xl-flex justify-content-xl-center"
-                                    id="list-group-brosur" href="#">
-                                    <span class="download-brosur">Download Brosur</span></a></div>
-                            <div class="buy-explore-btn">
-                                <a class="btn btn-dark" id="btn-beli" href="home.html">Beli</a><a
-                                    class="btn btn-primary" id="btn-explore" href="home.html">Explore</a>
+                                    id="list-group-brosur"
+                                    href="<?php echo ROOT_URL.'/images/product/'.$list['BROCHURE'].'?v='.rand()?>">
+                                    <span class="download-brosur">Download Brosur</span>
+                                    <img class="flaticon"
+                                        src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4Ij48cGF0aCBkPSJtNDA5Ljc4NTE1NiAyNzguNS0xNTMuNzg1MTU2IDE1My43ODUxNTYtMTUzLjc4NTE1Ni0xNTMuNzg1MTU2IDI4LjI4NTE1Ni0yOC4yODUxNTYgMTA1LjUgMTA1LjV2LTM1NS43MTQ4NDRoNDB2MzU1LjcxNDg0NGwxMDUuNS0xMDUuNXptMTAyLjIxNDg0NCAxOTMuNWgtNTEydjQwaDUxMnptMCAwIiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+Cg==" />
+
+                                </a>
                             </div>
+                            <!--div class="buy-explore-btn">
+                                <a class="btn btn-dark" id="btn-beli" href="#">Beli</a><a class="btn btn-primary"
+                                    id="btn-explore"
+                                    href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>">Explore</a>
+                            </div-->
                         </div>
                     </div>
                 </div>
@@ -134,49 +186,28 @@ require_once ('includes/banner.php')
                 <div class="col-md-6">
                     <div class="b-about__inner">
                         <h2 class="ui-title-block">Tentang Suzuki Trada</h2>
-                        <div class="ui-subtitle-block">Tempor incididunt duis labore dolore magna aliqua sed ipsum</div>
-                        <div class="ui-decor"></div>
+                        <div class="ui-subtitle-block">PT Sejahtera Buana Trada adalah Dealer Terbesar kendaraan roda
+                            4 (mobil).</div>
+                        <!-- <div class="ui-decor"></div> -->
                         <div class="b-about-main">
-                            <div class="b-about-main__title">We are a Trusted Name in Auto Industry</div>
-                            <div class="b-about-main__subtitle">Visited by Million of Car Buyers Every Month!</div>
-                            <p>MotorLand is aliquip exd ea consequat duis lorem ipsum dolor sit amet consectetur dipis
-                                icing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                ad minim veniam quis nostrud exercitation.</p>
-                            <p>Slamco laboris nisi ut aliquip ex ea comdo consequat uis aute irure dolor raeprehenderit
-                                voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            <div class="b-about-main__btns"><a class="btn btn-dark" href="home.html">Our partners</a><a
-                                    class="btn btn-primary" href="home.html">learn more</a>
+                            <div class="b-about-main__title">Dealer Suzuki Terbesar di Indonesia</div>
+                            <div class="b-about-main__subtitle">Dapatkan Pelayanan Terbaik Dari Kami !</div>
+                            <p>PT Sejahtera Buana Trada berdiri berdasarkan Akta Pendirian No. 21 tanggal 17 Januari
+                                2014 yang dibuat oleh Notaris Popie Savitri Martosuhardjo Pharmanto, SH. PT Sejahtera
+                                Buana Trada memiliki jaringan dealer di seluruh Indonesia.</p>
+                            <div class="b-about-main__btns">
+                                <!-- <a class="btn btn-dark" href="home.html">Our partners</a> -->
+                                <a class="btn btn-primary"
+                                    href="<?php echo ROOT_URL?>/tentang-trada.php">Selengkapnya</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <ul class="b-about-list list-unstyled">
-                        <li class="b-about-list__item"><i class="b-about-list__icon flaticon-travel"></i>
-                            <div class="b-about-list__inner">
-                                <div class="b-about-list__title">10 Years in Business</div>
-                                <div class="b-about-list__info">MotorLand is nisi aliquip ea consequat duis velit esse
-                                    cillum dolore fugiat nulla pariatur excepteur sint occaecat.</div>
-                                <div class="ui-decor-2"></div>
-                            </div>
-                        </li>
-                        <li class="b-about-list__item"><i class="b-about-list__icon flaticon-handshake"></i>
-                            <div class="b-about-list__inner">
-                                <div class="b-about-list__title">Trusted by Auto Buyers</div>
-                                <div class="b-about-list__info">MotorLand is nisi aliquip ea consequat duis velit esse
-                                    cillum dolore fugiat nulla pariatur excepteur sint occaecat.</div>
-                                <div class="ui-decor-2"></div>
-                            </div>
-                        </li>
-                        <li class="b-about-list__item"><i class="b-about-list__icon flaticon-transport"></i>
-                            <div class="b-about-list__inner">
-                                <div class="b-about-list__title">Affordable Auto Prices</div>
-                                <div class="b-about-list__info">MotorLand is nisi aliquip ea consequat duis velit esse
-                                    cillum dolore fugiat nulla pariatur excepteur sint occaecat.</div>
-                                <div class="ui-decor-2"></div>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="col-md-6">
+                    <div class="section-type-2__img">
+                        <img class="img-responsive"
+                            src="<?php echo ROOT_URL?>/assets/img/about_img.jpg?<?php echo rand()?>" alt="foto">
+                    </div>
                 </div>
             </div>
         </div>
@@ -188,11 +219,13 @@ require_once ('includes/banner.php')
             <section class="b-info b-info_mod-a area-bg area-bg_op_80 area-bg_prim parallax"
                 style="background-image: url(<?php echo ROOT_URL ?>/assets/media/content/bg/bg-4.jpg)">
                 <div class="area-bg__inner">
-                    <h2 class="b-info__title">Are You Looking<strong class="b-info__title_lg">TO BUY A CAR?</strong>
+                    <h2 class="b-info__title">Apakah Anda Ingin<strong class="b-info__title_lg">Beli Mobil?</strong>
                     </h2>
-                    <div class="b-info__desc">MotorLand is nisi aliquip exa con velit esse cillum dolore fugiatal sint
-                        occaecat excepteur ipsum dolor sit amet consectetur.</div><a class="btn btn-white"
-                        href="#">search your car</a>
+                    <div class="b-info__desc">Berkendara bukan hanya sebuah perjalanan, namun cerita dan kebanggaan.
+                        Temukan berbagai mobil pilihan Suzuki yang dirancang khusus dengan presisi melalui teknologi
+                        modern dan desain stylish sesuai gaya Anda.
+                    </div>
+                    <a class="btn btn-white" href="<?php echo ROOT_URL?>/mobil.php">Cari Mobil</a>
                 </div>
             </section>
         </div>
@@ -200,11 +233,13 @@ require_once ('includes/banner.php')
             <section class="b-info b-info_mod-b area-bg area-bg_op_80 area-bg_dark-2 parallax"
                 style="background-image: url(<?php echo ROOT_URL ?>/assets/media/content/bg/bg-3.jpg)">
                 <div class="area-bg__inner">
-                    <h2 class="b-info__title">Do You Want To<strong class="b-info__title_lg">SELL YOUR CAR?</strong>
+                    <h2 class="b-info__title">Apakah Anda Ingin<strong class="b-info__title_lg">Service Mobil?</strong>
                     </h2>
-                    <div class="b-info__desc">MotorLand is nisi aliquip exa con velit esse cillum dolore fugiatal sint
-                        occaecat excepteur ipsum dolor sit amet consectetur.</div><a class="btn btn-white" href="#">let
-                        us know</a>
+                    <div class="b-info__desc">Untuk ketenangan Anda, rawatlah kendaraan Suzuki Anda secara berkala dan
+                        hati-hati, sebagai contoh dengan melaksanakan penggantian oli mesin dan brake-pad pada waktu
+                        yang telah ditentukan.
+                    </div>
+                    <a class="btn btn-white" href="<?php echo ROOT_URL?>/service.php">Ayo Service</a>
                 </div>
             </section>
         </div>
@@ -215,61 +250,68 @@ require_once ('includes/banner.php')
             <div class="row">
                 <div class="col-xs-12">
                     <div class="text-center">
-                        <h2 class="ui-title-block">Latest News</h2>
-                        <div class="ui-subtitle-block">Tempor incididunt labore dolore magna clium fugiat alique</div>
-                        <div class="ui-decor"></div>
+                        <h2 class="ui-title-block">Berita Terbaru</h2>
+                        <div class="ui-subtitle-block"></div>
+                        <!-- <div class="ui-decor"></div> -->
                     </div>
+
                     <div class="carousel-news owl-carousel owl-theme owl-theme_w-btn enable-owl-carousel"
                         data-min768="2" data-min992="3" data-min1200="3" data-margin="30" data-pagination="false"
                         data-navigation="true" data-auto-play="4000" data-stop-on-hover="true">
+                        <?php
+                        $varBS['LIMIT']=6;
+                        $list = getRecord('tbl_content', $varBS);
+                        foreach($list['RESULT'] as $list){
+                        ?>
                         <section class="b-post b-post-1 clearfix">
                             <div class="entry-media">
-                                <img class="img-responsive" src="<?php echo ROOT_URL?>\assets\img\img_news.jpeg"
+                                <img class="img-responsive"
+                                    src="<?php echo ROOT_URL.'/images/content/'.$list['IMAGE'].'?var='.rand()?>"
                                     alt="Foto" />
                             </div>
                             <div class="entry-main">
                                 <div class="entry-header">
                                     <div class="entry-meta">
-                                        <div class="entry-meta__face">
-                                            <img class="img-responsive" src="assets/img/img-news.jpeg" alt="face" />
-                                        </div>
+                                        <!-- <div class="entry-meta__face">
+                                            <img class="img-responsive" src="<?php echo ROOT_URL.'/images/content/'.$list['IMAGE'].'?var='.rand()?>" alt="face" />
+                                        </div> -->
                                         <!-- <span class="entry-meta__item">Post by<a class="entry-meta__link"
                                                 href="blog-main.html"> Thomas Neil</a></span><a
                                             class="entry-meta__categorie" href="blog-main.html"><strong>Ford
                                                 News</strong></a> -->
                                     </div>
-                                    <h2 class="entry-title"><a href="blog-post.html">Ford Motors overhauled its design
-                                            team </a></h2>
+                                    <h2 class="entry-title"><a
+                                            href="<?php echo ROOT_URL.'/berita-detail.php?id='.$list['ID']?>"><?php echo $list['TITLE']?>
+                                        </a>
+                                    </h2>
                                 </div>
                                 <div class="entry-content">
-                                    <p>Duis aute irure reprehender voluptate velits fugiat nulla pariatur excepteur
-                                        ipsum doloe amet consecteur adipisicing elit.</p>
+                                    <p><?php echo substr($list['CONTENT'],0,80).' ...';?></p>
                                 </div>
-                                <div class="entry-footer">
+                                <!-- <div class="entry-footer">
                                     <div class="entry-footer__inner">
                                         <div class="b-post-social">SHARE
                                             <ul class="b-post-social__list list-inline">
-                                                <li><a href="twitter.com"><i class="icon fa fa-twitter"></i></a>
+                                                <li>
+                                                    <a href="twitter.com"><i class="icon fa fa-twitter"></i></a>
                                                 </li>
-                                                <li><a href="facebook.com"><i class="icon fa fa-facebook"></i></a>
-                                                </li>
-                                                <li><a href="plus.google.com"><i class="icon fa fa-google-plus"></i></a>
-                                                </li>
-                                                <li><a href="pinterest.com"><i class="icon fa fa-pinterest-p"></i></a>
+                                                <li>
+                                                    <a href="facebook.com"><i class="icon fa fa-facebook"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <!-- <div class="entry-meta">
+                                        <div class="entry-meta">
                                             <span class="entry-meta__item"><i
                                                     class="entry-meta__icon fa fa-heart"></i>300</span>
-                                        </div> -->
+                                        </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </section>
-
+                        <?php } ?>
                         <!-- end .post-->
                     </div>
+
                     <!-- end .carousel-news-->
                 </div>
             </div>
@@ -283,7 +325,7 @@ require_once ('includes/footer.php')
  ?>
 
 
-    </div>
+
     <!-- end layout-theme-->
 
 
@@ -323,6 +365,48 @@ require_once ('includes/footer.php')
     <script src="<?php echo ROOT_URL ?>/assets/plugins/scrollreveal/scrollreveal.min.js"></script>
     <!-- Main slider-->
     <script src="<?php echo ROOT_URL ?>/assets/plugins/slider-pro/jquery.sliderPro.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="<?php echo ROOT_URL?>/assets/plugins/slick/slick.min.js"></script>
+    <!-- Slick -->
+    <script>
+    $(document).ready(function() {
+        $('.banner').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 800,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+    });
+    </script>
 </body>
 
 </html>

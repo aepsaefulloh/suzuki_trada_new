@@ -1,0 +1,154 @@
+.photo-container {
+    padding: 80px 0px;
+}
+
+.photo-card {
+    width: 326px;
+    margin: 0 26px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0% !important;
+    border: none !important;
+    transition: width 0.3s ease;
+}
+
+.photo-img {
+    width: 100%;
+    height: 200px !important;
+    object-fit: cover;
+    object-position: center;
+}
+
+.photo-date {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.photo-title.first {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    max-width: 726px;
+}
+
+.photo-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    max-width: 326px;
+    margin-bottom: 52px;
+}
+
+.photo-link {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 10px;
+    color: #068DEF;
+}
+
+.photo-card-footer {
+    width: 100%;
+    border-top: 1px solid #C4C4C4;
+    position: absolute;
+    bottom: 0;
+    padding: 12px 0px;
+}
+
+.photo-slider {
+    margin-top: 32px;
+}
+
+.photo-slider .slick-list {
+    display: block;
+    height: auto !important;
+}
+
+.photo-slider .slick-list .slick-track {
+    padding-bottom: 4px;
+    display: flex !important;
+}
+
+.slick-slide {
+    height: inherit !important;
+}
+
+.all-photo-img {
+    width: 363px;
+    height: 424px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.all-photo-bg {
+    position: absolute;
+    width: 363px;
+    height: 424px;
+    top: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))
+}
+
+.all-photo-info {
+    position: absolute;
+    width: 360px;
+    padding-left: 24px;
+    padding-right: 120px;
+    top: 240px;
+}
+
+.all-photo-date {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #068DEF;
+    margin-bottom: 12px;
+}
+
+.all-photo-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    color: #FFFFFF;
+}
+
+.all-photo-container {
+    margin-top: 32px;
+    margin-bottom: 170px;
+}
+
+.all-photo-pagination {
+    margin-top: 130px;
+}
+
+.all-photo-pagination-text.active {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    color: #E6007E;
+    border-bottom: 1px solid #E6007E;
+}
+
+.all-photo-pagination-text.unactive {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+}
+
+.slick-active {
+    width: 540px;
+    transition: width 0.3s ease;
+}

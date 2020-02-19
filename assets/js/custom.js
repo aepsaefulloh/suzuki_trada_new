@@ -330,21 +330,21 @@ $(document).ready(function() {
 
     if ($('#datetimepicker').length > 0) {
         $('#datetimepicker').datetimepicker({
-            timepicker: false,
+            timepicker: true,
             format: 'd/m/Y',
             formatDate: 'Y/m/d'
         });
     }
     if ($('#datepicker').length > 0) {
         $('#datepicker').datetimepicker({
-            timepicker: false,
+            timepicker: true,
             format: 'd/m/Y',
             formatDate: 'Y/m/d'
         });
     }
     if ($('#offdatepicker').length > 0) {
         $('#offdatepicker').datetimepicker({
-            timepicker: false,
+            timepicker: true,
             format: 'd/m/Y',
             formatDate: 'Y/m/d'
         });

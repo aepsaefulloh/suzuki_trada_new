@@ -1,0 +1,10 @@
+.sponsorship-container{
+    background: #EFEFEF;
+    padding: 120px 0;
+}
+.sponsorship-img{
+    width: 244px;
+    height: 44px;
+    object-fit: contain;
+    margin:  0 32px;
+}

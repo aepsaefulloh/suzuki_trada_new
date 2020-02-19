@@ -2,6 +2,8 @@
 require_once 'config.php';
 require_once ROOT_PATH.'/lib/dao_utility.php';
 require_once ROOT_PATH.'/lib/mysqlDao.php';
+require_once ROOT_PATH.'/lib/json_utility.php';
+require_once ROOT_PATH.'/lib/init.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,24 +12,23 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Motor Land / Home</title>
+    <title>Produk | <?php echo $objConf['DD_SITENAME']?></title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="telephone=no" name="format-detection" />
     <meta name="HandheldFriendly" content="true" />
-    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/master.css" />
-    <!-- SWITCHER-->
-    <link href="<?php echo ROOT_URL ?>/assets/plugins/switcher/css/switcher.css" rel="stylesheet" id="switcher-css" />
-    <link href="<?php echo ROOT_URL ?>/assets/plugins/switcher/css/color1.css" rel="alternate stylesheet"
-        title="color1" />
-    <link href="<?php echo ROOT_URL ?>/assets/plugins/switcher/css/color2.css" rel="alternate stylesheet"
-        title="color2" />
-    <link href="<?php echo ROOT_URL ?>/assets/plugins/switcher/css/color3.css" rel="alternate stylesheet"
-        title="color3" />
-    <link href="<?php echo ROOT_URL ?>/assets/plugins/switcher/css/color4.css" rel="alternate stylesheet"
-        title="color4" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/master.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/color.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/styles.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/theme.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/responsive.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/Corporate-Footer-Clean.css?<?php echo rand()?>" />
+
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/plugins/headers/header.css?<?php echo rand()?>" />
+
     <!--[if lt IE 9 ]>
 <script src="<?php echo ROOT_URL ?>/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
 <![endif]-->
@@ -44,7 +45,7 @@ require_once ('includes/header.php')
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h1 class="b-title-page bg-primary_a">cars listings III</h1>
+                        <h1 class="b-title-page bg-primary_a">Suzuki Trada Produk</h1>
                     </div>
                 </div>
             </div>
@@ -56,88 +57,72 @@ require_once ('includes/header.php')
             <div class="row">
                 <div class="col-xs-12">
                     <ol class="breadcrumb">
-                        <li><a href="home.html"><i class="icon fa fa-home"></i></a>
+                        <li><a href="<?php echo ROOT_URL ?>"><i class="icon fa fa-home"></i></a>
                         </li>
-                        <li class="active">Vehicle Inventry</li>
+                        <li class="active">Produk</li>
                     </ol>
                 </div>
             </div>
         </div>
     </div>
+    <!-- <div class="banner-ads">
+        <img class="img-fluid ads-img" src="<?php echo ROOT_URL?>/assets/img/ads_img.jpg?<?php echo rand()?>"/>
+</div> -->
     <!-- end breadcrumb-->
     <div class="container">
-        <div class="row">
-            <div class="col-md-9 col-md-push-3">
+        <div class="row mobile-reverse">
+            <div class="col-md-9 col-md-push-3 ">
                 <main class="l-main-content">
                     <div class="filter-goods">
                         <div class="filter-goods__info">Showing results from<strong> 1 - 10</strong> of total<strong>
                                 35</strong>
                         </div>
-                        <div class="filter-goods__select"><span class="hidden-xs">Sort</span>
-                            <!-- <select class="selectpicker" data-width="172">
+                        <!-- <div class="filter-goods__select"><span class="hidden-xs">Sort</span>
+                            <select class="selectpicker" data-width="172">
                                 <option>Most Revelant</option>
                                 <option>A-Z</option>
                                 <option>Z-A</option>
-                            </select> -->
+                            </select>
                             <div class="btns-switch"><i
                                     class="btns-switch__item js-view-th active icon fa fa-th-large"></i><i
                                     class="btns-switch__item js-view-list icon fa fa-th-list"></i>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- end .filter-goods-->
-            
-                    <div class="goods-group-2 list-goods list-goods_th">
-                    <?php 
-                        for($i = 0; $i < 6; $i++){
-                    ?>
-                        <section class="b-goods-1 b-goods-1_mod-a">
+                    <div class="goods-group-2 list-goods list-goods_th filtr-container">
+                        <?php
+                            $var_all['LIMIT'] = 9;
+                            // $var_all['CATEGORY'] = 3;
+                            $var_all['STATUS']=1;
+                            $list = getRecord('tbl_product', $var_all);
+                            foreach($list['RESULT'] as $list){
+                        ?>
+                        <section class="b-goods-1 b-goods-1_mod-a filtr-item" data-category="1">
                             <div class="row">
                                 <div class="b-goods-1__img">
-                                    <a class="js-zoom-images" href="assets/media/components/b-goods/263x210_1.jpg">
-                                        <img class="img-responsive" src="assets/media/components/b-goods/263x210_1.jpg"
+                                    <a class="js-zoom-images"
+                                        href="<?php echo ROOT_URL.'/images/product/'.$list['IMAGE'].'?var='.rand()?>">
+                                        <img class="img-responsive anim-img"
+                                            src="<?php echo ROOT_URL.'/images/product/'.$list['IMAGE'].'?var='.rand()?>"
                                             alt="foto" />
-                                    </a><span class="b-goods-1__price hidden-th">$45,000
-                                        <!-- <span class="b-goods-1__price-msrp">MSRP $27,000</span> -->
-                                        </span>
+                                    </a><span class="b-goods-1__price hidden-th">RP. <?php echo $list['PRICE']?>
+                                    </span>
                                 </div>
                                 <div class="b-goods-1__inner">
                                     <div class="b-goods-1__header"><a class="b-goods-1__choose hidden-th"
-                                            href="listing-1.html">
-                                            <!-- <i class="icon fa fa-heart-o"></i> -->
+                                            href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>">
                                         </a>
-                                        <h2 class="b-goods-1__name"><a href="mobil-detail.php">FERRARI F650 SCUDERIA</a>
+                                        <h2 class="b-goods-1__name"><a
+                                                href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>"><?php echo $list['PRODUCT'] ?></a>
                                         </h2>
                                     </div>
-                                    <div class="b-goods-1__info">Duis aute irure reprehender voluptate velit esacium
-                                        fugiat nula pariatur excepteurd magna aliqua ut enim ad minim veniam quis
-                                        nostrud Lorem ipsum dolor sit amet con sectetur adipisicing elit sed do eiusmod
-                                        tempor
-                                        incididunt<span class="b-goods-1__info-more collapse" id="info-1"> lorem ipsum
-                                            dolor sit amet, consectetur adipisicing elit. Odit aut rerum numquam hic
-                                            eum, aperiam fuga, pariatur repellendus. Incidunt corporis iusto illo
-                                            nesciunt soluta optio eius aliquam. Similique, laborum dicta!</span>
-                                        <span class="b-goods-1__info-link" data-toggle="collapse"
-                                            data-target="#info-1"></span>
-                                    </div><span class="b-goods-1__price_th text-primary visible-th">Rp. 123.123.123
-                                        <!-- <span class="b-goods-1__price-msrp">MSRP $27,000</span> -->
-                                            <a
-                                            class="b-goods-1__choose" href="listing-1.html">
-                                            <!-- <i class="icon fa fa-heart-o"></i> -->
+                                    <span
+                                        class="b-goods-1__price_th text-primary visible-th">Rp.&nbsp;<?php echo $list['PRICE']?>
+                                        <a class="b-goods-1__choose" href="">
                                         </a>
                                     </span>
                                     <div class="b-goods-1__section">
-                                        <h3 class="b-goods-1__title" data-toggle="collapse" data-target="#desc-1">
-                                            Highlights</h3>
-                                        <div class="collapse in" id="desc-1">
-                                            <ul class="b-goods-1__desc list-unstyled">
-                                                <li class="b-goods-1__desc-item">35,000 mi</li>
-                                                <li class="b-goods-1__desc-item"><span class="hidden-th">Model:</span>
-                                                    2017</li>
-                                                <li class="b-goods-1__desc-item">Auto</li>
-                                                <li class="b-goods-1__desc-item hidden-th">320 hp</li>
-                                            </ul>
-                                        </div>
                                     </div>
                                     <div class="b-goods-1__section hidden-th">
                                         <h3 class="b-goods-1__title" data-toggle="collapse" data-target="#list-1">
@@ -145,7 +130,8 @@ require_once ('includes/header.php')
                                         <div class="collapse in" id="list-1">
                                             <ul class="b-goods-1__list list list-mark-5">
                                                 <li class="b-goods-1__list-item">Engine DOHC 24-valve V-6</li>
-                                                <li class="b-goods-1__list-item">Audio Controls on Steering Wheel</li>
+                                                <li class="b-goods-1__list-item">Audio Controls on Steering Wheel
+                                                </li>
                                                 <li class="b-goods-1__list-item">Power Windows</li>
                                                 <li class="b-goods-1__list-item">Daytime Running Lights</li>
                                                 <li class="b-goods-1__list-item">Cruise Control, ABS</li>
@@ -156,73 +142,250 @@ require_once ('includes/header.php')
                             </div>
                         </section>
                         <?php } ?>
-                        <!-- end .b-goods-1-->
+                        <?php
+                            $var_hb['LIMIT'] = 9;
+                            $var_hb['CATEGORY'] = 3;
+                            $var_hb['STATUS']=1;
+                            $list = getRecord('tbl_product', $var_hb);
+                            foreach($list['RESULT'] as $list){
+                        ?>
+                        <section class="b-goods-1 b-goods-1_mod-a filtr-item" data-category="2">
+                            <div class="row">
+                                <div class="b-goods-1__img">
+                                    <a class="js-zoom-images"
+                                        href="<?php echo ROOT_URL.'/images/product/'.$list['IMAGE'].'?var='.rand()?>">
+                                        <img class="img-responsive anim-img"
+                                            src="<?php echo ROOT_URL.'/images/product/'.$list['IMAGE'].'?var='.rand()?>"
+                                            alt="foto" />
+                                    </a><span class="b-goods-1__price hidden-th">RP. <?php echo $list['PRICE']?>
+                                    </span>
+                                </div>
+                                <div class="b-goods-1__inner">
+                                    <div class="b-goods-1__header"><a class="b-goods-1__choose hidden-th"
+                                            href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>">
+                                        </a>
+                                        <h2 class="b-goods-1__name"><a
+                                                href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>"><?php echo $list['PRODUCT'] ?></a>
+                                        </h2>
+                                    </div>
+                                    <span
+                                        class="b-goods-1__price_th text-primary visible-th">Rp.&nbsp;<?php echo $list['PRICE']?>
+                                        <a class="b-goods-1__choose" href="">
+                                        </a>
+                                    </span>
+                                    <div class="b-goods-1__section">
+                                    </div>
+                                    <div class="b-goods-1__section hidden-th">
+                                        <h3 class="b-goods-1__title" data-toggle="collapse" data-target="#list-1">
+                                            specifications</h3>
+                                        <div class="collapse in" id="list-1">
+                                            <ul class="b-goods-1__list list list-mark-5">
+                                                <li class="b-goods-1__list-item">Engine DOHC 24-valve V-6</li>
+                                                <li class="b-goods-1__list-item">Audio Controls on Steering Wheel
+                                                </li>
+                                                <li class="b-goods-1__list-item">Power Windows</li>
+                                                <li class="b-goods-1__list-item">Daytime Running Lights</li>
+                                                <li class="b-goods-1__list-item">Cruise Control, ABS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <?php } ?>
+                        <?php
+                            $var_mpv ['LIMIT'] = 9;
+                            $var_mpv['CATEGORY'] = 8;
+                            $list = getRecord('tbl_product', $var_mpv);
+                            foreach($list['RESULT'] as $list){
+                        ?>
+                        <section class="b-goods-1 b-goods-1_mod-a filtr-item" data-category="3">
+                            <div class="row">
+                                <div class="b-goods-1__img">
+                                    <a class="js-zoom-images"
+                                        href="<?php echo ROOT_URL.'/images/product/'.$list['IMAGE'].'?var='.rand()?>">
+                                        <img class="img-responsive anim-img"
+                                            src="<?php echo ROOT_URL.'/images/product/'.$list['IMAGE'].'?var='.rand()?>"
+                                            alt="foto" />
+                                    </a><span class="b-goods-1__price hidden-th">RP. <?php echo $list['PRICE']?>
+                                    </span>
+                                </div>
+                                <div class="b-goods-1__inner">
+                                    <div class="b-goods-1__header"><a class="b-goods-1__choose hidden-th"
+                                            href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>">
+                                        </a>
+                                        <h2 class="b-goods-1__name"><a
+                                                href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>"><?php echo $list['PRODUCT'] ?></a>
+                                        </h2>
+                                    </div>
+                                    <span
+                                        class="b-goods-1__price_th text-primary visible-th">Rp.&nbsp;<?php echo $list['PRICE']?>
+                                        <a class="b-goods-1__choose" href="">
+                                        </a>
+                                    </span>
+                                    <div class="b-goods-1__section">
+                                    </div>
+                                    <div class="b-goods-1__section hidden-th">
+                                        <h3 class="b-goods-1__title" data-toggle="collapse" data-target="#list-1">
+                                            specifications</h3>
+                                        <div class="collapse in" id="list-1">
+                                            <ul class="b-goods-1__list list list-mark-5">
+                                                <li class="b-goods-1__list-item">Engine DOHC 24-valve V-6</li>
+                                                <li class="b-goods-1__list-item">Audio Controls on Steering Wheel
+                                                </li>
+                                                <li class="b-goods-1__list-item">Power Windows</li>
+                                                <li class="b-goods-1__list-item">Daytime Running Lights</li>
+                                                <li class="b-goods-1__list-item">Cruise Control, ABS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <?php } ?>
+                        <?php
+                            $var_cc['LIMIT'] = 9;
+                            $var_cc['CATEGORY'] = 11;
+                            $var_cc['STATUS']=1;
+                            $list = getRecord('tbl_product', $var_cc);
+                            foreach($list['RESULT'] as $list){
+                        ?>
+                        <section class="b-goods-1 b-goods-1_mod-a filtr-item" data-category="4">
+                            <div class="row">
+                                <div class="b-goods-1__img">
+                                    <a class="js-zoom-images"
+                                        href="<?php echo ROOT_URL.'/images/product/'.$list['IMAGE'].'?var='.rand()?>">
+                                        <img class="img-responsive anim-img"
+                                            src="<?php echo ROOT_URL.'/images/product/'.$list['IMAGE'].'?var='.rand()?>"
+                                            alt="foto" />
+                                    </a><span class="b-goods-1__price hidden-th">RP. <?php echo $list['PRICE']?>
+                                    </span>
+                                </div>
+                                <div class="b-goods-1__inner">
+                                    <div class="b-goods-1__header"><a class="b-goods-1__choose hidden-th"
+                                            href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>">
+                                        </a>
+                                        <h2 class="b-goods-1__name"><a
+                                                href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>"><?php echo $list['PRODUCT'] ?></a>
+                                        </h2>
+                                    </div>
+                                    <span
+                                        class="b-goods-1__price_th text-primary visible-th">Rp.&nbsp;<?php echo $list['PRICE']?>
+                                        <a class="b-goods-1__choose" href="">
+                                        </a>
+                                    </span>
+                                    <div class="b-goods-1__section">
+                                    </div>
+                                    <div class="b-goods-1__section hidden-th">
+                                        <h3 class="b-goods-1__title" data-toggle="collapse" data-target="#list-1">
+                                            specifications</h3>
+                                        <div class="collapse in" id="list-1">
+                                            <ul class="b-goods-1__list list list-mark-5">
+                                                <li class="b-goods-1__list-item">Engine DOHC 24-valve V-6</li>
+                                                <li class="b-goods-1__list-item">Audio Controls on Steering Wheel
+                                                </li>
+                                                <li class="b-goods-1__list-item">Power Windows</li>
+                                                <li class="b-goods-1__list-item">Daytime Running Lights</li>
+                                                <li class="b-goods-1__list-item">Cruise Control, ABS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <?php } ?>
+                        <?php
+                            $var_niaga ['LIMIT'] = 9;
+                            $var_niaga['CATEGORY'] = 10;
+                            $var_niaga['STATUS']=1;
+                            $list = getRecord('tbl_product', $var_niaga);
+                            foreach($list['RESULT'] as $list){
+                        ?>
+                        <section class="b-goods-1 b-goods-1_mod-a filtr-item" data-category="5">
+                            <div class="row">
+                                <div class="b-goods-1__img">
+                                    <a class="js-zoom-images"
+                                        href="<?php echo ROOT_URL.'/images/product/'.$list['IMAGE'].'?var='.rand()?>">
+                                        <img class="img-responsive anim-img"
+                                            src="<?php echo ROOT_URL.'/images/product/'.$list['IMAGE'].'?var='.rand()?>"
+                                            alt="foto" />
+                                    </a><span class="b-goods-1__price hidden-th">RP. <?php echo $list['PRICE']?>
+                                    </span>
+                                </div>
+                                <div class="b-goods-1__inner">
+                                    <div class="b-goods-1__header"><a class="b-goods-1__choose hidden-th"
+                                            href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>">
+                                        </a>
+                                        <h2 class="b-goods-1__name"><a
+                                                href="<?php echo ROOT_URL.'/mobil-detail.php?id='.$list['ID']?>"><?php echo $list['PRODUCT'] ?></a>
+                                        </h2>
+                                    </div>
+                                    <span
+                                        class="b-goods-1__price_th text-primary visible-th">Rp.&nbsp;<?php echo $list['PRICE']?>
+                                        <a class="b-goods-1__choose" href="">
+                                        </a>
+                                    </span>
+                                    <div class="b-goods-1__section">
+                                    </div>
+                                    <div class="b-goods-1__section hidden-th">
+                                        <h3 class="b-goods-1__title" data-toggle="collapse" data-target="#list-1">
+                                            specifications</h3>
+                                        <div class="collapse in" id="list-1">
+                                            <ul class="b-goods-1__list list list-mark-5">
+                                                <li class="b-goods-1__list-item">Engine DOHC 24-valve V-6</li>
+                                                <li class="b-goods-1__list-item">Audio Controls on Steering Wheel
+                                                </li>
+                                                <li class="b-goods-1__list-item">Power Windows</li>
+                                                <li class="b-goods-1__list-item">Daytime Running Lights</li>
+                                                <li class="b-goods-1__list-item">Cruise Control, ABS</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <?php } ?>
                     </div>
-                    <!-- end .goods-group-2-->
                 </main>
-                <!-- end .l-main-content-->
             </div>
+
             <div class="col-md-3 col-md-pull-9">
                 <aside class="l-sidebar">
                     <form class="b-filter-2 bg-grey">
                         <h3 class="b-filter-2__title">Cari</h3>
                         <div class="b-filter-2__inner">
                             <div class="b-filter-2__group">
-                                <div class="b-filter-2__group-title">Body style</div>
-                                <div class="b-filter-type-2">
-                                    <div class="b-filter-type-2__item">
-                                        <input class="b-filter-type-2__input" id="typePickup" type="checkbox" />
-                                        <label class="b-filter-type-2__label" for="typePickup"><i
-                                                class="b-filter-type-2__icon flaticon-pick-up"></i><span
-                                                class="b-filter-type-2__title">PICKUP</span>
-                                        </label>
-                                    </div>
-                                    <div class="b-filter-type-2__item">
-                                        <input class="b-filter-type-2__input" id="typeSuv" type="checkbox" />
-                                        <label class="b-filter-type-2__label" for="typeSuv"><i
-                                                class="b-filter-type-2__icon flaticon-car-of-hatchback-model"></i><span
-                                                class="b-filter-type-2__title">SUV</span>
-                                        </label>
-                                    </div>
-                                    <div class="b-filter-type-2__item">
-                                        <input class="b-filter-type-2__input" id="typeCoupe" type="checkbox" />
-                                        <label class="b-filter-type-2__label" for="typeCoupe"><i
-                                                class="b-filter-type-2__icon flaticon-coupe-car"></i><span
-                                                class="b-filter-type-2__title">coupe</span>
-                                        </label>
-                                    </div>
-                                    <div class="b-filter-type-2__item">
-                                        <input class="b-filter-type-2__input" id="typeConvertible" type="checkbox"
-                                            checked="checked" />
-                                        <label class="b-filter-type-2__label" for="typeConvertible"><i
-                                                class="b-filter-type-2__icon flaticon-cabrio-car"></i><span
-                                                class="b-filter-type-2__title">CONVERTIBLE</span>
-                                        </label>
-                                    </div>
-                                    <div class="b-filter-type-2__item">
-                                        <input class="b-filter-type-2__input" id="typeSedan" type="checkbox" />
-                                        <label class="b-filter-type-2__label" for="typeSedan"><i
-                                                class="b-filter-type-2__icon flaticon-sedan-car-model"></i><span
-                                                class="b-filter-type-2__title">sedan</span>
-                                        </label>
-                                    </div>
-                                    <div class="b-filter-type-2__item">
-                                        <input class="b-filter-type-2__input" id="typeMinicar" type="checkbox" />
-                                        <label class="b-filter-type-2__label" for="typeMinicar"><i
-                                                class="b-filter-type-2__icon flaticon-car-1"></i><span
-                                                class="b-filter-type-2__title">MINICAR</span>
-                                        </label>
-                                    </div>
+                                <div class="b-filter-2__group-title">Tipe Mobil</div>
+                                <div class="list-group" style="padding-top:10px; margin-bottom:0px;">
+                                    <a href="#" class="list-group-item list-group-item-action" data-filter="1"
+                                        id="filter-control">Semua
+                                        <i class="fa fa-angle-right" id="icon-angle-right"></i></a>
+                                    <a href="#" class="list-group-item list-group-item-action" data-filter="2"
+                                        id="filter-control">Hatchback
+                                        <i class="fa fa-angle-right" id="icon-angle-right"></i></a>
+                                    <a href="#" class="list-group-item list-group-item-action" data-filter="3"
+                                        id="filter-control">MPV
+                                        <i class="fa fa-angle-right" id="icon-angle-right"></i></a>
+                                    <a href="#" class="list-group-item list-group-item-action" data-filter="4"
+                                        id="filter-control">City Car
+                                        <i class="fa fa-angle-right" id="icon-angle-right"></i></a>
+                                    <a href="#" class="list-group-item list-group-item-action" data-filter="5"
+                                        id="filter-control">Niaga
+                                        <i class="fa fa-angle-right" id="icon-angle-right"></i></a>
+
                                 </div>
                             </div>
-
                         </div>
-                    </form>
-                    <!-- end .b-filter-->
-                </aside>
-                <!-- end .l-sidebar-->
             </div>
         </div>
+
+    </div>
+    </form>
+    <!-- end .b-filter-->
+    </aside>
+    <!-- end .l-sidebar-->
+    </div>
+    </div>
     </div>
 
 
@@ -271,6 +434,9 @@ require_once ('includes/footer.php')
     <script src="<?php echo ROOT_URL ?>/assets/plugins/scrollreveal/scrollreveal.min.js"></script>
     <!-- Main slider-->
     <script src="<?php echo ROOT_URL ?>/assets/plugins/slider-pro/jquery.sliderPro.min.js"></script>
+    <!-- Filter -->
+    <script src="<?php echo ROOT_URL?>/assets/plugins/filter/filter.js?<?php echo rand()?>"></script>
+
 </body>
 
 </html>

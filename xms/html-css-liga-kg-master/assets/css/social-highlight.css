@@ -1,0 +1,23 @@
+.social-container{
+    background: linear-gradient(245.28deg, #000000 -0.38%, rgba(0, 0, 0, 0) 55.93%), linear-gradient(93.48deg, #000000 30.26%, rgba(0, 0, 0, 0) 99.13%), url(../images/car.jpg);
+    background-size: cover;
+}
+.social-wrapper{
+    padding-top: 25%;
+}
+.social-hightlight{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+
+    margin-bottom: 20px;
+
+    color: #FFFFFF;
+}
+.social-subtitle{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #E6007E;
+}

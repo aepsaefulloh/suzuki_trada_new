@@ -1,0 +1,23 @@
+.jadwal-pertandingan-container{
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+.jadwal-pertandingan-pekan{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #C4C4C4;
+}
+.btn-dropdown-pekan{
+    background: #022539;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    margin: 0 12px;
+}
+.jadwal-pertandingan-filter-pekan{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

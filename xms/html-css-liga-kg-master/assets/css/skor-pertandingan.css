@@ -1,0 +1,52 @@
+.skor-pertandingan-stadium{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #C4C4C4;   
+}
+.skor-pertandingan-date{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    margin-top: 20px;
+    margin-bottom: 48px;
+    color: #194259;
+}
+.skor-pertandingan-club-logo{
+    width: 80px;
+    height: 80px;
+}
+.skor-pertandingan-club-skor{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    
+    margin: 0 20px;
+    color: #FFFFFF;
+}
+.skor-pertandingan-club-vs{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    margin: 0 8px;
+    color: #FFFFFF;
+    
+}
+.skor-pertandingan-club-view-full-statistik{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    background: #E6007E;
+    margin-top: 60px;
+    padding: 20px 36px;
+    color: #FFFFFF;
+}

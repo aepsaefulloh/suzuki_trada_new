@@ -950,11 +950,13 @@ blockquote cite {
 
 .section-default {
     position: relative;
-    padding-bottom: 110px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background: aliceblue;
 }
 
 .section-default_btm {
-    padding-bottom: 110px;
+    padding-bottom: 0px;
     padding-top: 110px;
 }
 
@@ -1254,6 +1256,7 @@ blockquote cite {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+    /* padding: 0px 0px 100px; */
 }
 
 .block-table__cell {
@@ -1400,8 +1403,13 @@ blockquote cite {
 }
 
 .section-type-2 {
-    padding-top: 110px;
+    padding-top: 50px;
     padding-bottom: 80px;
+}
+
+section.section-type-2.title {
+    padding-bottom: 0px;
+    padding-top: 50px;
 }
 
 .section-type-2__img {
@@ -1494,8 +1502,8 @@ blockquote cite {
 
 .b-about-main {
     /* margin-top: 60px; */
-    padding-top: 81px;
-    padding-bottom: 160px;
+    padding-top: 30px;
+    padding-bottom: 150px;
 }
 
 .b-about-main__title {
@@ -1582,7 +1590,7 @@ blockquote cite {
 .b-advantages-1 {
     position: relative;
     display: inline-block;
-    width: 25%;
+    width: 33%;
     margin-right: -3px;
     padding: 45px 5% 50px;
     vertical-align: top;
@@ -1679,9 +1687,30 @@ blockquote cite {
 
 .b-advantages-3 {
     position: relative;
-    padding: 60px 40px 52px;
+    padding: 20px 0px 20px;
     text-align: center;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.b-advantages-3:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.b-advantages-3__icon:hover {
+    animation: pulse 1s normal;
+    animation-direction: alternate;
+}
+
+@media(max-width: 700px) {
+    .b-advantages-3 {
+        padding: 5px 0px;
+        margin-right: -10px;
+        margin-left: -10px;
+        border: 0px;
+    }
 }
 
 .b-advantages-3:before,
@@ -1705,11 +1734,29 @@ blockquote cite {
     line-height: 1;
 }
 
+@media(max-width: 700px) {
+    .b-advantages-3__icon {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 700px) {
+    .b-advantages-3__info {
+        display: none;
+    }
+}
+
 .b-advantages-3__title {
     display: block;
     margin-top: 18px;
     margin-bottom: 17px;
     font-size: 16px;
+}
+
+@media(max-width: 700px) {
+    .b-advantages-3__title {
+        font-size: 10px;
+    }
 }
 
 .b-advantages-4 {
@@ -1797,8 +1844,8 @@ blockquote cite {
 
 .b-advantages-5__title {
     display: block;
-    margin-top: 4px;
-    margin-bottom: 19px;
+    margin-top: 25px;
+    /* margin-bottom: 19px; */
     font-size: 16px;
     letter-spacing: .01em;
 }
@@ -2318,7 +2365,7 @@ blockquote cite {
 }
 
 .b-car-details__address {
-    float: left;
+    float: right;
     padding-right: 30px;
     padding-left: 3px;
     font: 500 12px/1 Poppins;
@@ -2327,13 +2374,13 @@ blockquote cite {
 }
 
 .b-car-details__links {
-    float: right;
+    float: left;
     line-height: 1;
 }
 
 .b-car-details__link {
     display: inline-block;
-    margin-left: 21px;
+    margin-left: 0px;
     font: 500 12px Poppins;
     text-decoration: underline;
     color: #222;
@@ -2511,6 +2558,12 @@ blockquote cite {
     padding-bottom: 0;
 }
 
+@media(max-width: 700px) {
+    .section-filter {
+        padding-top: 50px;
+    }
+}
+
 .b-filter {
     margin-top: 56px;
 }
@@ -2597,6 +2650,10 @@ blockquote cite {
     display: inline-block;
     width: 50%;
     margin-right: -2px;
+}
+
+.b-filter-type-2__item.all {
+    width: 100%;
 }
 
 .b-filter-type-2__input {
@@ -2708,7 +2765,7 @@ blockquote cite {
 }
 
 .b-filter-2__inner {
-    padding: 40px 20px 0;
+    padding: 40px 5px 0;
 }
 
 .b-filter-2__title {
@@ -2725,7 +2782,7 @@ blockquote cite {
 }
 
 .b-filter-2__group {
-    padding-bottom: 42px;
+    padding-bottom: 10px;
 }
 
 .b-filter-2__group-title {
@@ -3059,11 +3116,12 @@ blockquote cite {
 }
 
 .b-goods-1__name {
-    float: left;
+    /* float: left; */
     font-size: 18px;
     font-weight: 700;
     letter-spacing: .025em;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .b-goods-1__name a {
@@ -3285,9 +3343,9 @@ blockquote cite {
 .list-goods_th .b-goods-1__price_th {
     position: relative;
     display: block;
-    padding-right: 70px;
     font-family: Poppins;
     font-weight: 600;
+    text-align: center;
 }
 
 .list-goods_th .b-goods-1__price_th .list-goods_th .b-goods-1__price_th__price-msrp {
@@ -3997,12 +4055,12 @@ blockquote cite {
 
 .section-news_mod-a {
     padding-top: 100px;
-    padding-bottom: 10px;
+    padding-bottom: 100px;
 }
 
 .carousel-news {
     margin-top: 56px;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
 }
 
 
@@ -4880,11 +4938,11 @@ blockquote cite {
 }
 
 .b-services {
-    padding: 73px 32% 50px 9%;
+    padding: 73px 10% 50px 10%;
 }
 
 .b-services__content {
-    padding-top: 37px;
+    padding-top: 10px;
     padding-bottom: 38px;
 }
 
@@ -5395,7 +5453,7 @@ blockquote cite {
 .footer .copyright {
     margin-right: 140px;
     padding: 32px 0;
-    font-size: 13px;
+    font-size: 14px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.65);
 }
@@ -5552,7 +5610,7 @@ blockquote cite {
     position: relative;
     display: block;
     padding-bottom: 6px;
-    padding-left: 19px;
+    padding-left: 0px;
     -webkit-transition: all .3s;
     transition: all .3s;
     color: #888;
@@ -5567,8 +5625,8 @@ blockquote cite {
     content: '';
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    border-top: 2px solid #ccc;
-    border-right: 2px solid #ccc;
+    /* border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc; */
 }
 
 .footer-list__link:hover:after {
@@ -5702,7 +5760,7 @@ blockquote cite {
 }
 
 .section-sidebar {
-    padding: 30px 0 45px;
+    /* padding: 30px 0 45px; */
     border-bottom: 1px solid #eee;
 }
 

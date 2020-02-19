@@ -1,0 +1,49 @@
+.outer {
+    width: 100%;
+    position: relative;
+    background-color: aqua;
+}
+
+.inner {
+    padding-top: 45%;
+}
+.slider-img{
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.btn-selengkapnya{
+    background: #E6007E;
+    padding: 20px 32px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.slider-date{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    letter-spacing: 0.1em;
+    
+    color: #FFFFFF;
+}
+.slider-title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    /* or 125% */
+    margin-top: 24px;
+    margin-bottom: 60px;
+    
+    color: #FFFFFF;
+}

@@ -1,0 +1,37 @@
+.header-menu-logo {
+    padding: 18px 0;
+}
+
+.header-menu-navbar {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    margin: 0 16px;
+}
+
+.nav-link:hover {
+    color: #E6007E;
+}
+
+.dropdown-item {
+    color: black;
+    border-bottom: 1px solid #E6007E;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.dropdown-item.current {
+    color: black;
+    border-bottom: 5px solid #E6007E;
+}
+
+.dropdown-menu {
+    padding: 0px;
+    border-radius: 0% !important;
+}

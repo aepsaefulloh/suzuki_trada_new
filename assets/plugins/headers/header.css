@@ -129,6 +129,7 @@
 
 .header.header-color-black .navbar .navbar-nav>li>a:hover {
     color: #fff;
+    background: #004E92;
 }
 
 .header.header-color-black .toggle-menu-button .toggle-menu-button-icon span {
@@ -153,7 +154,7 @@ body:not(.header-demo) .header.navbar-scrolling .navbar .navbar-nav>li>a {
 
 body:not(.header-demo) .header.navbar-scrolling .navbar .navbar-nav>li:hover>a,
 .header.navbar-scrolling .navbar .navbar-nav>li a:hover {
-    color: #333 !important;
+    color: #fff !important;
 }
 
 body:not(.header-demo) .header.navbar-scrolling .navbar .toggle-menu-button .toggle-menu-button-icon span {
@@ -334,6 +335,7 @@ body:not(.header-demo) .navbar-scrolling .btn {
 
 .header.header-topbar-dark .top-bar * {
     color: #FFF;
+    padding-top: 3px;
 }
 
 .top-bar {
@@ -359,7 +361,7 @@ body:not(.header-demo) .navbar-scrolling .btn {
     opacity: 0.6;
     font-size: 16px;
     display: inline-block;
-    vertical-align: middle;
+    /* vertical-align: middle; */
 }
 
 .top-bar .social-links li {
@@ -382,17 +384,17 @@ body:not(.header-demo) .navbar-scrolling .btn {
 
 .header-topbarbox-1-left .header-topbarbox-1,
 .header-topbarbox-2-left .header-topbarbox-2 {
-    float: left !important;
+    float: right !important;
 }
 
 .header-topbarbox-1-right .header-topbarbox-1,
 .header-topbarbox-2-right .header-topbarbox-2 {
-    float: right !important;
+    float: left !important;
 }
 
 .header-topbarbox-1,
 .header-topbarbox-2 {
-    padding: 15px 0 20px;
+    padding: 15px 0 15px;
 }
 
 .header-topbarbox-border .header-topbarbox-1,
@@ -1459,7 +1461,7 @@ html [data-off-canvas*=open] {
 
 .navbar-brand {
     height: auto;
-    padding: 5px 0 0 44px;
+    padding: 5px 0 0 0px;
 }
 
 .header-2 .top-bar .social-links li>a {

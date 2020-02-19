@@ -1,0 +1,57 @@
+
+.jadwal-card-card{
+    background: #06324C;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+.jadwal-card-club-logo{
+    width: 80px;
+    height: 80px;
+}
+.jadwal-card-vs{
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.jadwal-card-club-name{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+.jadwal-card-club-stadium{
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    /* or 140% */
+    color: #E8E8E8;
+    margin-bottom: 2px;
+}
+.jadwal-card-club-time{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 14px;
+    /* identical to box height, or 39% */
+    
+    color: #FFFFFF;
+}
+.btn-view-details{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    background: #E6007E;
+    padding: 20px 24px;
+}
+.jadwal-card-club-info{
+    padding-left: 24px;
+}

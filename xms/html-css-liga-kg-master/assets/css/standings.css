@@ -1,0 +1,69 @@
+.standings-container{
+    margin-bottom: 60px;
+}
+.standings-title{
+    margin-bottom: 24px;
+}
+.standings-table{
+    border: 0.5px solid #19A2F1;
+}
+.standings-td{
+    border-bottom: 1px solid #19A2F1 !important;
+    border-top: 1px solid #19A2F1 !important;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.standings-goal-scorer-info{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 32px;
+    /* or 267% */
+    
+    
+    color: #FFFFFF;
+}
+
+.standings-goal-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    
+    background: #FFFFFF;
+    margin-right: 16px;
+}
+.table-goal-scorer td{
+    padding: 0;
+    border-top: none;
+}
+.club-list{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    list-style-type: none;
+    padding: 0;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.club-list li{
+    border-left: 4px solid transparent;
+    padding: 8px 20px;
+    transition: 0.5s all ease;
+    margin-bottom: 4px;
+}
+.club-list li:hover, .club-list-active{
+    background: #E6007E;
+    transition: 0.5s all ease;
+    border-left: 4px solid #FF99D1 !important;
+}
+.club-list-logo{
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    margin-right: 20px;
+}

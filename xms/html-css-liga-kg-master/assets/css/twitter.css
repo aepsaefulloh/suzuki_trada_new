@@ -1,0 +1,65 @@
+.twitter-card{
+    margin-bottom: 16px;
+}
+.twitter-container{
+    padding: 68px 0;
+}
+.twitter-img{
+    height: 124px;
+    background: #C4C4C4;
+    width: 100%;
+}
+.twitter-info{
+    padding: 8px;
+    background: #004F9E;
+}
+.twitter-info-img{
+    width: 31px;
+    height: 31px;
+    
+    background: #000000;
+    margin-right: 8px;
+}
+.twitter-info-name{
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+.twitter-info-desc{
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 12px;
+    /* or 150% */
+    
+    
+    color: #FFFFFF;
+}
+.twitter-footer{
+    position: relative;
+    padding: 8px;
+    background: rgb(101, 172, 243);
+}
+.twitter-footer::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 16px solid #022539;
+    border-left: 16px solid rgb(101, 172, 243);
+    width: 0;
+}
+.btn-load-more{
+    background: #E6007E;
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    padding: 14px;
+    
+    color: #FFFFFF;
+    margin: 40px 0;
+}

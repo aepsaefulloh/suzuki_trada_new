@@ -2,6 +2,8 @@
 require_once 'config.php';
 require_once ROOT_PATH.'/lib/dao_utility.php';
 require_once ROOT_PATH.'/lib/mysqlDao.php';
+require_once ROOT_PATH.'/lib/json_utility.php';
+require_once ROOT_PATH.'/lib/init.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,36 +12,54 @@ require_once ROOT_PATH.'/lib/mysqlDao.php';
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Motor Land / Home</title>
+    <title>Jaringan Dealer</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="telephone=no" name="format-detection" />
     <meta name="HandheldFriendly" content="true" />
-    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/master.css" />
-    <!-- SWITCHER-->
-    <link href="<?php echo ROOT_URL ?>/assets/plugins/switcher/css/switcher.css" rel="stylesheet" id="switcher-css" />
-    <link href="<?php echo ROOT_URL ?>/assets/plugins/switcher/css/color1.css" rel="alternate stylesheet"
-        title="color1" />
-    <link href="<?php echo ROOT_URL ?>/assets/plugins/switcher/css/color2.css" rel="alternate stylesheet"
-        title="color2" />
-    <link href="<?php echo ROOT_URL ?>/assets/plugins/switcher/css/color3.css" rel="alternate stylesheet"
-        title="color3" />
-    <link href="<?php echo ROOT_URL ?>/assets/plugins/switcher/css/color4.css" rel="alternate stylesheet"
-        title="color4" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/master.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/color.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/styles.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/theme.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/responsive.css?<?php echo rand()?>" />
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/Corporate-Footer-Clean.css?<?php echo rand()?>" />
+
+    <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/plugins/headers/header.css?<?php echo rand()?>" />
     <!--[if lt IE 9 ]>
 <script src="<?php echo ROOT_URL ?>/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
 <![endif]-->
 </head>
 
 <body>
-
     <?php
 require_once ('includes/header.php')
  ?>
 
-  
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 class="hero-title">Dealer Suzuki Trada</h1>
+        </div>
+    </div>
+
+
+
+    <section class="jaringan-delaer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="jaringan-dealer-inner">
+                    <iframe class="iframe-dealer" src="https://www.google.com/maps/d/embed?mid=1EJI0KJry2vgr_thh8WajcvZlyIS-7XzH&hl=en"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end .b-about-->
+    </section>
+
+
     <?php
 require_once ('includes/footer.php')
  ?>

@@ -1,7 +1,29 @@
+/* banner */
+
+img.d-block.w-100 {
+    width: 100%;
+}
+
+
 /*  card product */
 
 img#foto-produk {
     width: 100%;
+}
+
+img#foto-produk:hover {
+    animation: pulse 1s normal;
+    animation-direction: alternate;
+}
+
+.bg-color-img:hover {
+    /* background: #8e9eab;
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+    background: linear-gradient(to right, #b1bec1, #969da2); */
+}
+
+@media (max-width: 700px) {
+    img#foto-produk {}
 }
 
 .buy-explore-btn {
@@ -13,31 +35,151 @@ a#btn-beli {
     width: -webkit-fill-available;
 }
 
+@media (max-width: 700px) {
+    a#btn-beli {
+        margin: 0px;
+        width: 50%;
+    }
+}
+
 a#btn-explore {
     width: -webkit-fill-available;
+}
+
+@media (max-width: 700px) {
+    a#btn-explore {
+        display: flex;
+        justify-content: center;
+        margin-left: 3px;
+        width: 50%;
+    }
 }
 
 div#list-card {
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
-    padding-top: 15px;
+    /* padding-top: 15px; */
 }
 
 a#list-group-harga {
     border: 0px;
     width: -webkit-fill-available;
     font-size: medium;
+    background: transparent;
+    font-weight: bold;
+    color: #323232;
+}
+
+a#list-group-harga:hover {
+    background: transparent;
+}
+
+a#list-group-brosur:hover {
+    background: transparent;
 }
 
 a#list-group-brosur {
     border: 0px;
     width: -webkit-fill-available;
     font-size: medium;
+    background: transparent;
+    font-weight: bold;
+    color: #323232;
 }
 
 #col-card-produk {
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+div#card-produk {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 5px;
+}
+
+@media(max-width: 700px) {
+    div#card-produk {
+        padding: 5px;
+    }
+    #col-card-produk {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+h4#card-title-produk {
+    font-size: 22px;
+    text-align: center;
+    font-family: inherit;
+    text-transform: capitalize;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.bg-color-img {
+    padding: 5px;
+}
+
+@media (max-width: 700px) {
+    h4#card-title-produk {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px) {
+    span.download-brosur {
+        font-size: 10px;
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    span.harga {
+        font-size: 14px;
+        font-weight: bold;
+        color: #323232;
+    }
+}
+
+@media (max-width: 700px) {
+    .buy-explore-btn {
+        display: flex;
+    }
+}
+
+@media (max-width: 700px) {
+    div#list-card {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    a#list-group-harga {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 700px) {
+    a#list-group-brosur {
+        padding: 5px;
+    }
+}
+
+.flaticon {
+    max-width: 10px;
+    max-height: 10px;
+    background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4Ij48cGF0aCBkPSJtNDA5Ljc4NTE1NiAyNzguNS0xNTMuNzg1MTU2IDE1My43ODUxNTYtMTUzLjc4NTE1Ni0xNTMuNzg1MTU2IDI4LjI4NTE1Ni0yOC4yODUxNTYgMTA1LjUgMTA1LjV2LTM1NS43MTQ4NDRoNDB2MzU1LjcxNDg0NGwxMDUuNS0xMDUuNXptMTAyLjIxNDg0NCAxOTMuNWgtNTEydjQwaDUxMnptMCAwIiBmaWxsPSIjMDAwMDAwIi8+PC9zdmc+Cg==)
+}
+
+@media (max-width: 700px) {
+    .flaticon {
+        display: none;
+    }
 }
 
 
@@ -59,3 +201,216 @@ a#list-group-brosur {
 
 
 /* end Kontak */
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+.b-advantages-1 {
+    position: relative;
+    display: inline-block;
+    width: 33%;
+    margin-right: -3px;
+    padding: 45px 5% 50px;
+    vertical-align: top;
+    border-bottom: 3px solid transparent;
+}
+
+.section-default.Service {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+@media(max-width: 700px) {
+    .section-default.Service {
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+}
+
+section.section-type-2.rev {
+    padding-top: 0px;
+    padding-bottom: 80px;
+}
+
+form.booking-service-form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px 30px 50px;
+    background: #004e92;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5691c8, #004e92);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5691c8, #004e92);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-type-2.service {
+    padding-top: 30px;
+}
+
+
+/* Booking Test Drive */
+
+.test-drive {
+    padding: 100px 0px 100px;
+    background: #457fca;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5691c8, #457fca);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5691c8, #457fca);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-title-page.test-drive {
+    background: url(../img/test-drive-hero.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Mobil */
+
+i#icon-angle-right {
+    float: right;
+}
+
+
+/* produk row column reverse */
+
+@media(max-width: 700px) {
+    .row.mobile-reverse {
+        flex-direction: column-reverse;
+        display: flex;
+    }
+}
+
+
+/* button modal test drive */
+
+.test-drive-modal {
+    padding: 20px 0px 10px;
+}
+
+
+/* image-pulse-mobil */
+
+img.img-responsive.anim-img:hover {
+    animation: pulse 1s normal;
+    animation-direction: alternate;
+}
+
+.banner-ads {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+img.img-fluid.ads-img {
+    width: 30%;
+}
+
+
+/* Jaringan Dealer */
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 600px;
+}
+
+.hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(10%, 50%);
+}
+
+.hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.hero-title {
+    color: #ffffff;
+}
+
+section.jaringan-delaer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+iframe.iframe-dealer {
+    display: flex;
+    width: -webkit-fill-available;
+    height: 500px;
+}
+
+
+/* End Jaringan-Dealer */
+
+
+/* Simulasi-kredit */
+
+.simulasi-kredit {
+    padding: 20px 0px 50px;
+    background: #457fca;
+    background: -webkit-linear-gradient(to right, #5691c8, #457fca);
+    background: linear-gradient(to right, #5691c8, #457fca);
+    text-align: -webkit-center;
+}
+
+form.b-calculator.simulasi {
+    border: 0px;
+}
+
+.b-calculator__label.lbl_sk {
+    float: left;
+    color: #ffffff;
+}
+
+.b-calculator__group.g_sk {
+    margin: 0px;
+    width: 50%;
+}
+
+
+/* End : Simulasi Kredit */
+
+
+/* Footer */
+
+.d-inline-block.item {
+    display: inline-block;
+}
+
+.d-inline-block.legal-links {
+    display: inline-block;
+}
+
+.page-footer .footer-legal .copyright {
+    display: inline-block;
+}
+
+.float-md-right.region {
+    float: right;
+}

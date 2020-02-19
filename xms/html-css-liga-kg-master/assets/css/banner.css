@@ -1,0 +1,8 @@
+.banner-container{
+    background: linear-gradient(0deg, rgba(2, 37, 57, 0.74), rgba(2, 37, 57, 0.74)), url(../images/banner/banner3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner-wrapper{
+    padding-top: 35%;
+}

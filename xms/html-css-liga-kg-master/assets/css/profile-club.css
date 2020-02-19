@@ -1,0 +1,28 @@
+.profile-club-container {
+    margin-top: 100px;
+}
+
+.profile-club-container .container{
+    margin-top: 110px;
+    margin-bottom: 153px;
+}
+
+.profile-club-card-container {
+    padding: 52px 0px 36px 0px;
+}
+
+.profile-club-card .card  {
+    border-radius: 0% !important;
+    border: none !important;
+}
+
+.profile-club-card-img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.profile-club-card-footer {
+    background: #E6007E;
+    color: white;
+    padding: 20px 0px;
+}

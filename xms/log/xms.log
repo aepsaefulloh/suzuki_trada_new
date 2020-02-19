@@ -1,0 +1,369 @@
+Wed Oct 31 13:53:14 2018,533 [3376] INFO index.php - data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+Wed Oct 31 13:53:17 2018,756 [3376] INFO index.php - data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+Wed Oct 31 13:53:25 2018,591 [3376] INFO index.php - data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+Wed Oct 31 14:07:54 2018,829 [3376] INFO index.php - data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+Wed Oct 31 15:28:05 2018,943 [3376] INFO index.php - data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+Thu Nov  1 04:29:27 2018,857 [2756] INFO index.php - data-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' LIMIT 0,30
+Thu Nov  1 04:29:27 2018,906 [2756] INFO index.php - data-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' ORDER by  ADD_TIMESTAMP DESC LIMIT 0,30
+Mon Nov  5 11:44:37 2018,991 [6148] INFO index.php - auth.php, action login..
+Mon Nov  5 11:44:38 2018,073 [6148] INFO index.php - auth.php, validate email : vises@jurnas.com
+Mon Nov  5 11:44:38 2018,118 [6148] INFO index.php - auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='vises@jurnas.com' AND PASSWD='Zg=='
+Mon Nov  5 11:44:44 2018,102 [6148] INFO index.php - auth.php, action login..
+Mon Nov  5 11:44:44 2018,103 [6148] INFO index.php - auth.php, validate email : admin@admin.com
+Mon Nov  5 11:44:44 2018,117 [6148] INFO index.php - auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='admin@admin.com' AND PASSWD='Zg=='
+2018-11-05T12:00:44+07:00 INFO  getKecamatan.php getKecamatan.php, getKecamatan : SELECT * from tbl_kecamatan where 1=1 AND ID_PROPINSI='1' AND ID_KABUPATEN='1' AND STATUS='1' LIMIT 200
+2018-11-05T12:04:36+07:00 INFO  getKabupaten.php getKabupaten.php, getKecamatan : SELECT * from tbl_kabupaten where 1=1 AND ID_PROPINSI='4' AND STATUS='1' LIMIT 200
+2018-11-05T12:04:55+07:00 INFO  getKabupaten.php getKabupaten.php, getKecamatan : SELECT * from tbl_kabupaten where 1=1 AND ID_PROPINSI='4' AND STATUS='1' LIMIT 200
+2018-11-05T12:06:10+07:00 INFO  getKabupaten.php getKabupaten.php, getKecamatan : SELECT * from tbl_kabupaten where 1=1 AND ID_PROPINSI='5' AND STATUS='1' LIMIT 200
+2018-11-05T12:06:12+07:00 INFO  getKecamatan.php getKecamatan.php, getKecamatan : SELECT * from tbl_kecamatan where 1=1 AND ID_KABUPATEN='88' AND STATUS='1' LIMIT 200
+2018-11-05T12:06:32+07:00 INFO  getKabupaten.php getKabupaten.php, getKecamatan : SELECT * from tbl_kabupaten where 1=1 AND ID_PROPINSI='1' AND STATUS='1' LIMIT 200
+2018-11-05T12:06:33+07:00 INFO  getKecamatan.php getKecamatan.php, getKecamatan : SELECT * from tbl_kecamatan where 1=1 AND ID_KABUPATEN='1' AND STATUS='1' LIMIT 200
+2018-11-05T12:23:17+07:00 INFO  getKecamatan.php getKecamatan.php, getKecamatan : SELECT * from tbl_kecamatan where 1=1 AND ID_KABUPATEN='3' AND STATUS='1' LIMIT 200
+2018-11-05T12:23:45+07:00 INFO  getKabupaten.php getKabupaten.php, getKecamatan : SELECT * from tbl_kabupaten where 1=1 AND ID_PROPINSI='5' AND STATUS='1' LIMIT 200
+2018-11-05T12:23:46+07:00 INFO  getKecamatan.php getKecamatan.php, getKecamatan : SELECT * from tbl_kecamatan where 1=1 AND ID_KABUPATEN='91' AND STATUS='1' LIMIT 200
+2018-11-05T12:23:49+07:00 INFO  getKabupaten.php getKabupaten.php, getKecamatan : SELECT * from tbl_kabupaten where 1=1 AND ID_PROPINSI='12' AND STATUS='1' LIMIT 200
+2018-11-05T12:23:50+07:00 INFO  getKecamatan.php getKecamatan.php, getKecamatan : SELECT * from tbl_kecamatan where 1=1 AND ID_KABUPATEN='166' AND STATUS='1' LIMIT 200
+2018-11-05T12:23:55+07:00 INFO  getKabupaten.php getKabupaten.php, getKecamatan : SELECT * from tbl_kabupaten where 1=1 AND ID_PROPINSI='15' AND STATUS='1' LIMIT 200
+2018-11-05T12:23:57+07:00 INFO  getKecamatan.php getKecamatan.php, getKecamatan : SELECT * from tbl_kecamatan where 1=1 AND ID_KABUPATEN='240' AND STATUS='1' LIMIT 200
+2018-11-05T12:23:59+07:00 INFO  getKabupaten.php getKabupaten.php, getKecamatan : SELECT * from tbl_kabupaten where 1=1 AND ID_PROPINSI='9' AND STATUS='1' LIMIT 200
+2018-11-05T12:24:01+07:00 INFO  getKecamatan.php getKecamatan.php, getKecamatan : SELECT * from tbl_kecamatan where 1=1 AND ID_KABUPATEN='144' AND STATUS='1' LIMIT 200
+2018-11-05T12:24:04+07:00 INFO  getKabupaten.php getKabupaten.php, getKecamatan : SELECT * from tbl_kabupaten where 1=1 AND ID_PROPINSI='17' AND STATUS='1' LIMIT 200
+2018-11-05T12:24:05+07:00 INFO  getKecamatan.php getKecamatan.php, getKecamatan : SELECT * from tbl_kecamatan where 1=1 AND ID_KABUPATEN='280' AND STATUS='1' LIMIT 200
+2018-11-05T13:05:39+07:00 index.php INFO  data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-05T13:06:36+07:00 index.php INFO  data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-12T04:33:12+01:00 index.php INFO  data-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' LIMIT 0,30
+2018-11-12T04:33:12+01:00 index.php INFO  data-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' ORDER by  ADD_TIMESTAMP DESC LIMIT 0,30
+2018-11-12T05:08:19+01:00 index.php INFO  data-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' LIMIT 0,30
+2018-11-12T05:08:19+01:00 index.php INFO  data-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' ORDER by  ADD_TIMESTAMP DESC LIMIT 0,30
+2018-11-12T05:11:02+01:00 index.php INFO  detail-media.php, getRecord : SELECT * from tbl_content where 1=1 AND FILENAME='29d2995f9946255d73ea5102fdcb1239.jpeg' AND STATUS='1' ORDER by  ADD_TIMESTAMP DESC LIMIT 1
+2018-11-12T05:17:25+01:00 index.php INFO  detail-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' AND (DESCRIPTION like '%Padat Karya Tunai Paping Blok di Kabupaten Madiun%' or KEYWORD like '%Padat Karya Tunai Paping Blok di Kabupaten Madiun%')  ORDER by  ADD_TIMESTAMP DESC LIMIT 12
+2018-11-12T05:17:45+01:00 index.php INFO  detail-media.php, getRecord : SELECT * from tbl_content where 1=1 AND TITLE='Padat Karya Tunai Paping Blok di Kabupaten Madiun' AND STATUS='1' ORDER by  ADD_TIMESTAMP DESC LIMIT 12
+2018-11-12T05:18:53+01:00 index.php INFO  detail-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' ORDER by  ADD_TIMESTAMP DESC LIMIT 12
+2018-11-12T05:19:08+01:00 index.php INFO  detail-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' ORDER by  ADD_TIMESTAMP DESC LIMIT 12
+2018-11-12T05:19:42+01:00 index.php INFO  detail-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' ORDER by  ADD_TIMESTAMP DESC LIMIT 12
+2018-11-12T05:23:06+01:00 index.php INFO  detail-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' ORDER by  ADD_TIMESTAMP DESC LIMIT 12
+2018-11-12T05:23:42+01:00 index.php INFO  detail-media.php, getRecord : SELECT * from tbl_content where 1=1 AND STATUS='1' ORDER by  ADD_TIMESTAMP DESC LIMIT 12
+2018-11-12T13:21:22+07:00 index.php INFO  auth.php, action login..
+2018-11-12T13:21:22+07:00 index.php INFO  auth.php, validate email : vises@jurnas.com
+2018-11-12T13:21:22+07:00 index.php INFO  auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='vises@jurnas.com' AND PASSWD='Zg=='
+2018-11-12T13:22:26+07:00 index.php INFO  auth.php, action login..
+2018-11-12T13:22:26+07:00 index.php INFO  auth.php, validate email : vises@mtouche.com
+2018-11-12T13:22:26+07:00 index.php INFO  auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='vises@mtouche.com' AND PASSWD='Zg=='
+2018-11-12T13:22:38+07:00 index.php INFO  data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-12T13:25:38+07:00 index.php INFO  data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-12T13:25:50+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T13:25:52+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T13:29:33+07:00 index.php INFO  data-materipenyuluhan.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='materipenyuluhan' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-12T13:32:36+07:00 index.php INFO  data-user.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-12T13:33:00+07:00 index.php INFO  data-user.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-12T13:34:19+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-12T13:34:20+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-12T13:34:20+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-12T13:34:33+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-12T13:37:40+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-12T13:40:03+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-12T13:40:35+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-12T13:41:28+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-12T13:41:30+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-12T13:41:33+07:00 index.php INFO  data-user.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-12T13:42:47+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T13:42:49+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-12T13:42:58+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T13:43:21+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:11:57+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:13:44+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:13:45+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:13:45+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:13:51+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:14:20+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:14:21+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:14:21+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:15:45+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abc',URL='' where ID='1'
+2018-11-12T15:15:45+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:15:50+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='' where ID='1'
+2018-11-12T15:15:50+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:15:55+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='' where ID='1'
+2018-11-12T15:15:55+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:16:02+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='' where ID='1'
+2018-11-12T15:16:02+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:16:25+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='' where ID='1'
+2018-11-12T15:16:25+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:16:30+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='' where ID='1'
+2018-11-12T15:16:30+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:16:42+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='',IMAGE='8e6fced1ca3394d812328567d9743a13.png' where ID='1'
+2018-11-12T15:16:42+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:16:58+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='',IMAGE='8e6fced1ca3394d812328567d9743a13.png' where ID='1'
+2018-11-12T15:16:58+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:17:31+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='',IMAGE='8e6fced1ca3394d812328567d9743a13.png' where ID='1'
+2018-11-12T15:17:31+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:17:55+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='',STATUS='1' where ID='1'
+2018-11-12T15:17:55+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:18:29+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='',STATUS='1' where ID='1'
+2018-11-12T15:18:29+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:18:44+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='',STATUS='1' where ID='1'
+2018-11-12T15:18:44+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:18:54+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='',STATUS='1' where ID='1'
+2018-11-12T15:18:54+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:18:55+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='',STATUS='1' where ID='1'
+2018-11-12T15:18:55+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:19:05+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='',STATUS='1' where ID='1'
+2018-11-12T15:19:05+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:19:20+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:19:32+07:00 index.php INFO  data-banner.php, saveRecord : insert into tbl_banners (TITLE,URL,STATUS,IMAGE) values ('head2','','1','a2f5f4d40f5d75212c1d66c8d4dedc62.png')
+2018-11-12T15:19:32+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:19:42+07:00 index.php INFO  data-banner.php, saveRecord : insert into tbl_banners (TITLE,URL,STATUS,IMAGE) values ('head3','','1','24f809882b425e91e33d0c3f6b2585d4.png')
+2018-11-12T15:19:42+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:19:47+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='head3',URL='',STATUS='1' where ID='84'
+2018-11-12T15:19:47+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:20:11+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='head3',URL='',POS='SLIDER',STATUS='1' where ID='84'
+2018-11-12T15:20:11+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:20:16+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='head2',URL='',POS='SLIDER',STATUS='1' where ID='83'
+2018-11-12T15:20:16+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:20:21+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='abcaaa',URL='',POS='SLIDER',STATUS='1' where ID='1'
+2018-11-12T15:20:21+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:20:24+07:00 index.php INFO  data-banner.php, saveRecord : UPDATE tbl_banners set TITLE='head3',URL='',POS='SLIDER',STATUS='1' where ID='84'
+2018-11-12T15:20:24+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:37:43+07:00 index.php INFO  data-kategori.php, saveRecord : UPDATE tbl_category set SEO='resep',STATUS='1' where ID='1'
+2018-11-12T15:37:53+07:00 index.php INFO  data-kategori.php, saveRecord : UPDATE tbl_category set SEO='resep',STATUS='1' where ID='1'
+2018-11-12T15:38:10+07:00 index.php INFO  data-kategori.php, saveRecord : UPDATE tbl_category set SEO='resep',STATUS='1' where ID='1'
+2018-11-12T15:38:29+07:00 index.php INFO  data-kategori.php, saveRecord : UPDATE tbl_category set CATEGORY_NAME='Resepx',SEO='resep',STATUS='1' where ID='1'
+2018-11-12T15:38:32+07:00 index.php INFO  data-kategori.php, saveRecord : UPDATE tbl_category set CATEGORY_NAME='Resepx',SEO='resep',STATUS='1' where ID='1'
+2018-11-12T15:38:36+07:00 index.php INFO  data-kategori.php, saveRecord : UPDATE tbl_category set CATEGORY_NAME='Resep',SEO='resep',STATUS='1' where ID='1'
+2018-11-12T15:38:46+07:00 index.php INFO  data-kategori.php, saveRecord : UPDATE tbl_category set CATEGORY_NAME='Resep',SEO='resep',STATUS='1' where ID='1'
+2018-11-12T15:42:45+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set STATUS='1' where ID='1'
+2018-11-12T15:42:51+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set STATUS='1' where ID='1'
+2018-11-12T15:42:55+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set STATUS='1' where ID='1'
+2018-11-12T15:43:00+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set STATUS='0' where ID='1'
+2018-11-12T15:43:20+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-12T15:43:34+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set STATUS='0' where ID='1'
+2018-11-12T15:44:17+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set STATUS='0' where ID='1'
+2018-11-12T15:44:21+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set STATUS='0' where ID='1'
+2018-11-12T15:44:33+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set TITLE='Home',URL='/',POS='TOP',STATUS='0' where ID='1'
+2018-11-12T15:44:41+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set TITLE='Home',URL='/',POS='FOOT',STATUS='0' where ID='1'
+2018-11-12T15:44:48+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set TITLE='Home',URL='/',POS='FOOT',STATUS='0' where ID='1'
+2018-11-12T15:45:00+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set TITLE='Home',URL='/',POS='FOOT',STATUS='0' where ID='1'
+2018-11-12T15:45:05+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set TITLE='Home',URL='/',POS='TOP',STATUS='0' where ID='1'
+2018-11-12T15:45:12+07:00 index.php INFO  data-menu.php, saveRecord : UPDATE tbl_menu set TITLE='Home',URL='/',POS='TOP',STATUS='0' where ID='1'
+2018-11-12T15:45:21+07:00 index.php INFO  data-user.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-13T11:25:04+07:00 index.php INFO  auth.php, action login..
+2018-11-13T11:25:04+07:00 index.php INFO  auth.php, validate email : vises@jurnas.com
+2018-11-13T11:25:04+07:00 index.php INFO  auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='vises@jurnas.com' AND PASSWD='Zg=='
+2018-11-13T11:25:10+07:00 index.php INFO  auth.php, action login..
+2018-11-13T11:25:10+07:00 index.php INFO  auth.php, validate email : vises@mtouche.com
+2018-11-13T11:25:10+07:00 index.php INFO  auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='vises@mtouche.com' AND PASSWD='Zg=='
+2018-11-13T11:25:15+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-13T11:25:18+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-13T11:52:16+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-13T13:38:21+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-13T13:38:26+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-13T13:38:28+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-13T13:38:31+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-13T13:38:33+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-13T13:39:15+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-13T13:39:25+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:39:56+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:40:10+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:40:17+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:40:24+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:40:33+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:40:35+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:40:48+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:40:50+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:40:52+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:40:54+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:41:34+07:00 index.php INFO  data-static.php, Save Record : UPDATE tbl_content set TITLE='ABOUT',CONTENT='<p>test</p>' where ID='1'
+2018-11-13T13:41:34+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-13T13:41:34+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:42:38+07:00 index.php INFO  data-static.php, Save Record : UPDATE tbl_static set TITLE='ABOUT',CONTENT='<p>test</p>' where ID='1'
+2018-11-13T13:42:38+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-13T13:42:38+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:42:43+07:00 index.php INFO  data-static.php, Save Record : UPDATE tbl_static set TITLE='ABOUT',CONTENT='<p>test</p>' where ID='1'
+2018-11-13T13:42:43+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-13T13:42:43+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:43:12+07:00 index.php INFO  data-static.php, Save Record : UPDATE tbl_static set TITLE='ABOUT',CONTENT='<p>test</p>' where ID='1'
+2018-11-13T13:43:12+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='static' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-13T13:43:12+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:43:17+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-13T13:43:20+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-13T13:43:22+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-14T11:17:28+07:00 index.php INFO  auth.php, action login..
+2018-11-14T11:17:28+07:00 index.php INFO  auth.php, validate email : admin@admin
+2018-11-14T11:17:28+07:00 index.php INFO  auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='admin@admin' AND PASSWD='Zg=='
+2018-11-14T11:17:34+07:00 index.php INFO  auth.php, action login..
+2018-11-14T11:17:34+07:00 index.php INFO  auth.php, validate email : admin@admin.com
+2018-11-14T11:17:34+07:00 index.php INFO  auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='admin@admin.com' AND PASSWD='Zg=='
+2018-11-14T11:19:09+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-14T11:23:07+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-14T11:23:09+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-14T14:16:06+07:00 index.php INFO  data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-14T14:23:52+07:00 index.php INFO  data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-14T14:30:37+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-14T14:31:23+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-14T14:32:43+07:00 index.php INFO  data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-14T14:33:16+07:00 index.php INFO  data-statis.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='materipenyuluhan' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:33:49+07:00 index.php INFO  data-statis.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:34:07+07:00 index.php INFO  data-materipenyuluhan.php, Save Record : insert into tbl_content (TITLE,TAICING,CONTENT,KEYWORD,CAPTION,PUBLISH_TIMESTAMP,ID_USER,CATEGORY) values ('Visi & Misi','','','','','2018-11-14 14:34:07','1','materipenyuluhan')
+2018-11-14T14:34:09+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='materipenyuluhan' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:34:11+07:00 index.php INFO  data-materipenyuluhan.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='materipenyuluhan' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:34:15+07:00 index.php INFO  data-statis.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:34:54+07:00 index.php INFO  data-statis.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:35:11+07:00 index.php INFO  data-statis.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:35:17+07:00 index.php INFO  data-statis.php, Save Record : insert into tbl_content (TITLE,TAICING,CONTENT,KEYWORD,CAPTION,PUBLISH_TIMESTAMP,ID_USER,CATEGORY) values ('Visi & Misi','','','','','2018-11-14 14:35:17','1','statis')
+2018-11-14T14:35:20+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:35:22+07:00 index.php INFO  data-statis.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:36:02+07:00 index.php INFO  data-statis.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:36:23+07:00 index.php INFO  data-statis.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:36:43+07:00 index.php INFO  data-statis.php, Save Record : insert into tbl_content (TITLE,TAICING,CONTENT,KEYWORD,CAPTION,STATUS,PUBLISH_TIMESTAMP,ID_USER,CATEGORY) values ('Struktur Organisasi','','','','','1','2018-11-14 14:36:43','1','statis')
+2018-11-14T14:36:46+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:36:48+07:00 index.php INFO  data-statis.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:36:54+07:00 index.php INFO  data-statis.php, Save Record : UPDATE tbl_content set TITLE='Visi & Misi',TAICING='',CONTENT='',KEYWORD='',CAPTION='',STATUS='1' where ID='75459'
+2018-11-14T14:36:56+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:36:58+07:00 index.php INFO  data-statis.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:37:00+07:00 index.php INFO  data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-14T14:37:56+07:00 index.php INFO  data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-14T14:38:01+07:00 index.php INFO  data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-14T14:38:11+07:00 index.php INFO  data-administrasiuser.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-14T14:38:15+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='statis' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T14:39:31+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:40:07+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:40:39+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:41:07+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:43:14+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:44:22+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:44:40+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:44:45+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 20,20
+2018-11-14T14:44:47+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:48:15+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:48:24+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:48:34+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='BERITA',URL='',STATUS='1' where ID='4'
+2018-11-14T14:48:36+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:48:36+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:48:43+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='MATERI',URL='',STATUS='1' where ID='3'
+2018-11-14T14:48:45+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:48:45+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:48:53+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='ORGANISASI',URL='',STATUS='1' where ID='1'
+2018-11-14T14:48:55+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:48:55+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:49:02+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:49:05+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:49:05+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:49:46+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:49:48+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:49:48+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:50:24+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:50:26+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:50:26+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:50:57+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:50:59+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:50:59+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:51:20+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:51:21+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:51:21+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:52:17+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:52:19+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:52:19+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:52:20+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:52:22+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:52:22+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:54:00+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:55:48+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:55:50+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:55:50+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:57:23+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:57:25+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:57:25+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:58:10+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:58:12+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:58:12+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T14:59:24+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T14:59:27+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T14:59:27+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:00:55+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:00:58+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:00:58+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:01:49+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:01:51+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:01:51+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:02:09+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:02:11+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:02:11+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:02:31+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:02:33+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:02:33+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:02:47+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:02:49+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:02:49+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:03:01+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:03:04+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:03:04+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:03:26+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:03:29+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:03:29+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:04:17+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:04:19+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:04:19+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:04:36+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:04:38+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:04:38+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:04:38+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:04:40+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:04:40+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:04:41+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:04:44+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:04:44+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:04:49+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:04:51+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:04:51+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:05:31+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:05:33+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:05:33+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:06:16+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:06:18+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:06:18+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:06:27+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:06:29+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:06:29+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:07:31+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:07:33+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:07:33+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:43:40+07:00 index.php INFO  data-menu.php, Save Record : UPDATE tbl_menu set TITLE='INFO KITA',URL='',STATUS='1' where ID='5'
+2018-11-14T15:44:05+07:00 index.php INFO  jsonwrite.php, Write Cache : SELECT * from tbl_content where 1=1 AND STATUS='1' AND CATEGORY='menu' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 20
+2018-11-14T15:44:05+07:00 index.php INFO  data-menu.php, getRecord : SELECT * from tbl_menu where 1=1 AND LEVEL='0' ORDER by POS DESC LIMIT 0,20
+2018-11-14T15:45:35+07:00 index.php INFO  data-materipenyuluhan.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='materipenyuluhan' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-14T15:45:41+07:00 index.php INFO  data-materipenyuluhan.php, getRecord : SELECT * from tbl_content where 1=1 AND CATEGORY='materipenyuluhan' ORDER by PUBLISH_TIMESTAMP DESC LIMIT 0,20
+2018-11-15T10:25:16+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-15T10:25:18+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-15T10:25:21+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-15T10:25:24+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-15T10:25:25+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-15T10:25:29+07:00 index.php INFO  data-user.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-15T10:31:39+07:00 index.php INFO  data-user.php, get Record : SELECT * from tbl_user where 1=1 LIMIT 0,12
+2018-11-17T15:38:05+07:00 index.php INFO  auth.php, action login..
+2018-11-17T15:38:05+07:00 index.php INFO  auth.php, validate email : vises@jurnas.com
+2018-11-17T15:38:05+07:00 index.php INFO  auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='vises@jurnas.com' AND PASSWD='Zg=='
+2018-11-17T15:38:12+07:00 index.php INFO  auth.php, action login..
+2018-11-17T15:38:12+07:00 index.php INFO  auth.php, validate email : admin@admi
+2018-11-17T15:38:12+07:00 index.php INFO  auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='admin@admi' AND PASSWD='Zg=='
+2018-11-17T15:38:23+07:00 index.php INFO  auth.php, action login..
+2018-11-17T15:38:23+07:00 index.php INFO  auth.php, validate email : admin@admin.com
+2018-11-17T15:38:23+07:00 index.php INFO  auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='admin@admin.com' AND PASSWD='Zg=='
+2018-11-26T11:12:28+07:00 index.php INFO  auth.php, action login..
+2018-11-26T11:12:28+07:00 index.php INFO  auth.php, validate email : admin@admin.com
+2018-11-26T11:13:06+07:00 index.php INFO  auth.php, action login..
+2018-11-26T11:13:06+07:00 index.php INFO  auth.php, validate email : admin@admin.com
+2018-11-26T11:13:13+07:00 index.php INFO  auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='admin@admin.com' AND PASSWD='Zg=='
+2018-11-26T11:24:01+07:00 index.php INFO  auth.php, action login..
+2018-11-26T11:24:01+07:00 index.php INFO  auth.php, validate email : vises@mtouche.com
+2018-11-26T11:24:01+07:00 index.php INFO  auth.php, getLogin : SELECT count(1) as status  from tbl_user WHERE STATUS='1' AND EMAIL='vises@mtouche.com' AND PASSWD='Zg=='
+2018-11-26T11:46:01+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-26T11:49:41+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-26T11:49:45+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-26T11:50:09+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-26T13:48:37+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-27T14:39:13+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-27T14:39:14+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-27T14:39:14+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-27T14:59:41+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-27T15:09:52+07:00 index.php INFO  data-banner.php, getRecord : SELECT * from tbl_banners where 1=1 ORDER by ID DESC LIMIT 0,20
+2018-11-27T15:22:20+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20
+2018-11-27T15:31:57+07:00 index.php INFO  data-static.php, getRecord : SELECT * from tbl_static where 1=1 LIMIT 0,20

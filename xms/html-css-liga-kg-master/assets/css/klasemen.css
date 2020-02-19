@@ -1,0 +1,36 @@
+.klasemen-container {
+    margin-top: 80px;
+    margin-bottom: 172px;
+}
+
+.klasemen-table {
+    margin-top: 60px;
+}
+
+.klasemen-table .table{
+    border: 1px solid #19A2F1;
+}
+
+.klasemen-table .table tr th:first-child{
+    border-left: 1px solid #19A2F1;
+    border-bottom: 2px solid #19A2F1;
+    padding: 28px 80px 28px 28px;
+}
+
+.klasemen-table .table tr th:last-child,
+.klasemen-table .table tr td:last-child{
+    border-right: 1px solid #19A2F1;
+}
+
+.klasemen-table .table tr th{
+    border-top: 1px solid #19A2F1;
+    border-bottom: 2px solid #19A2F1;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+.klasemen-table .table tr td{
+    border-bottom: 2px solid #19A2F1;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}

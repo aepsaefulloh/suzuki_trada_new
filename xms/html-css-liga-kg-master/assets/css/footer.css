@@ -1,0 +1,58 @@
+.footer-row{
+    padding: 60px 0;
+}
+.footer-title{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    margin-bottom: 18px;
+    color: #FFFFFF;
+}
+.footer-desc{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    
+    
+    color: #FFFFFF;
+}
+.footer-input, .footer-input:focus{
+    box-shadow: none;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    border-radius: 0;
+    color: #FFFFFF;
+    background-color: #022539;
+}
+.footer-email-btn{
+    border-radius: 0;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+.footer-description{
+    font-size: 10px;
+    line-height: 12px;
+    padding: 62px 0;
+    color: #FFFFFF;
+}
+.footer-cpr{
+    border-top: 1px solid #FFFFFF;
+    padding: 24px;
+    
+}
+.footer-cpr h3{
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
