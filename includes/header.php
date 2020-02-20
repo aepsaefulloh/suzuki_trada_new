@@ -7,10 +7,10 @@ require_once ROOT_PATH.'/lib/init.php';
 ?>
 
 <!-- Loader-->
-<div id="page-preloader">
+<!-- <div id="page-preloader">
     <span class="spinner border-t_second_b border-t_prim_a">
     </span>
-</div>
+</div> -->
 <!-- Loader end-->
 <!-- ==========================-->
 <!-- MOBILE MENU-->
@@ -23,25 +23,26 @@ require_once ROOT_PATH.'/lib/init.php';
             src="<?php echo ROOT_URL.'/images/conf/'.$objConf['DD_RLOGO']?>" alt="logo" width="120px" />
     </a>
     <ul class="nav navbar-nav">
+    <?php 
+       $varMenu['ORDER']='ORDNUM ASC';
+       $varMenu['LIMIT']=10;
+       $varMenu['POS']='top';
+       $varMenu['LEVEL']=0;
+       $varMenu['STATUS']=1;
+       $listMenu = getRecord('tbl_menu', $varMenu);
+       $listMenu2 = $listMenu;
+       foreach($listMenu['RESULT'] as $listMenu){
+        $url=ROOT_URL.'/'.$listMenu['URL'];    
+    ?>
+    
         <li>
             <h4><a href="<?php echo ROOT_URL?>"></a></h4>
         </li>
-        <li><a href="<?php echo ROOT_URL?>">Home</a>
+        <li><a href="<?php echo $url?>"><?php echo $listMenu['TITLE'] ?></a>
         </li>
-        <li><a href="<?php echo ROOT_URL?>/promo.php">Promo</a>
+       <?php } ?>
+        <!-- <li><a href="<?php echo ROOT_URL?>/promo.php">Promo</a>
         </li>
-        <!-- <li><a href="car-rental.html">Car Rental</a>
-                                </li> -->
-        <!-- <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Korporate<b
-                    class="caret"></b></a>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="<?php echo ROOT_URL?>/tentang-trada.php" tabindex="-1">Tentang Trada</a>
-                </li>
-                <li><a href="<?php echo ROOT_URL?>/visi-misi.php" tabindex="-1">Visi Misi</a>
-                </li>
-                <li><a href="<?php echo ROOT_URL?>/penghargaan.php" tabindex="-1">Penghargaan</a>
-                </li>
-            </ul> -->
         </li>
         <li><a href="<?php echo ROOT_URL?>/mobil.php">Mobil</a>
         </li>
@@ -52,7 +53,7 @@ require_once ROOT_PATH.'/lib/init.php';
         <li><a href="<?php echo ROOT_URL?>/berita.php">Berita</a>
         </li>
         <li><a href="<?php echo ROOT_URL?>/kontak-kami.php">Kontak Kami</a>
-        </li>
+        </li> -->
     </ul>
 </div>
 <div class="l-theme animated-css" data-header="sticky" data-header-top="200" data-canvas="container">
@@ -85,14 +86,7 @@ require_once ROOT_PATH.'/lib/init.php';
             <div class="top-bar">
                 <div class="container">
                     <div class="header-topbarbox-1">
-                        <!-- <ul>
-                            <li><i class="icon fa fa-clock-o"></i> Mon - Fri : 0900am to 0600pm</li>
-                            <li><i class="icon fa fa-phone"></i><a href="tel:+0427983549">+ 042 798 3549</a>
-                            </li>
-                            <li><i class="icon fa fa-envelope-o"></i><a
-                                    href="mailto:support@motorland.com">suzukitrada@gmail.com</a>
-                            </li>
-                        </ul> -->
+
                         <a href="<?php echo ROOT_URL?>">
                             <img class="scroll-logo hidden-xs img-responsive"
                                 src="<?php echo ROOT_URL.'/images/conf/'.$objConf['DD_RLOGO']?>" alt="logo" alt="logo"
@@ -113,20 +107,6 @@ require_once ROOT_PATH.'/lib/init.php';
                                 <!-- <i class="icon fa fa-clock-o"></i><?php echo $objConf['DD_TW']?></li> -->
                             <li>
                         </ul>
-                        <!-- <ul class="social-links">
-                            <li><a href="/" target="_blank"><i class="social_icons fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="/" target="_blank"><i class="social_icons fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="/" target="_blank"><i class="social_icons fa fa-linkedin"></i></a>
-                            </li>
-                            <li class="li-last"><a href="/" target="_blank"><i
-                                        class="social_icons fa fa-instagram"></i></a>
-                            </li>
-                            <li><a href="/" target="_blank"><i class="social_icons fa fa-youtube-play"></i></a>
-                            </li>
-                        </ul> -->
-
                     </div>
                 </div>
             </div>
@@ -148,29 +128,22 @@ require_once ROOT_PATH.'/lib/init.php';
                     </div>
 
                     <div class="header-navibox-2">
+                 
                         <ul class="yamm main-menu nav navbar-nav">
+                        <?php 
+                         
+                            foreach($listMenu2['RESULT'] as $listMenu2){
+                                $url=ROOT_URL.'/'.$listMenu2['URL'];               
+
+                             ?>
+                        
                             <li>
-                                <a href="<?php echo ROOT_URL?>">Home</a>
+                                <a href="<?php echo $url?>"><?php echo $listMenu2['TITLE'] ?></a>
                             </li>
-                            <li>
+        <?php } ?>
+                            <!-- <li>
                                 <a href="<?php echo ROOT_URL?>/promo.php">Promo</a>
                             </li>
-                            <!-- <li class="dropdown">
-                                <a class="dropdown-toggle" href="#" data-toggle="dropdown">Korporat
-                                    <b class="caret"></b></a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="<?php echo ROOT_URL?>/tentang-trada.php" tabindex="-1">Tentang
-                                            Trada</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo ROOT_URL?>/visi-misi.php" tabindex="-1">Visi Misi</a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo ROOT_URL?>/penghargaan.php" tabindex="-1">Penghargaan</a>
-                                    </li>
-                                </ul>
-                            </li> -->
                             <li>
                                 <a href="<?php echo ROOT_URL?>/mobil.php">Mobil</a>
                             </li>
@@ -185,7 +158,7 @@ require_once ROOT_PATH.'/lib/init.php';
                             </li>
                             <li>
                                 <a href="<?php echo ROOT_URL?>/kontak-kami.php">Kontak Kami</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>

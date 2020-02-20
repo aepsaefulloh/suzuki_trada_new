@@ -51,11 +51,11 @@ if($params['ID']>0){
 							
                             <?php if($params['PARENT_ID']<1){?>
                             <p>
-                                <label>Posisi</label>
+                                <label>Posisi <?php echo $objDetail['POS']?></label>
                                 <span class="field">
-									<input type="radio" name="POS" value='TOP' style="opacity: 0;" <?php if($objDetail['POS']=='TOP') echo 'checked'?>>	Top
-									<input type="radio" name="POS" value='FOOTER1' <?php if($objDetail['POS']=='FOOTER1') echo 'checked'?>>	Footer1
-									<input type="radio" name="POS" value='FOOTER2' <?php if($objDetail['POS']=='FOOTER2') echo 'checked'?>>	Footer2
+									<input type="radio" name="POS" value='top' style="opacity: 0;" <?php if($objDetail['POS']=='top') echo 'checked'?>>	TOP
+									<input type="radio" name="POS" value='footer1' <?php if($objDetail['POS']=='footer1') echo 'checked'?>>	FOOTER1
+									<input type="radio" name="POS" value='footer2' <?php if($objDetail['POS']=='footer2') echo 'checked'?>>	FOOTER2
 									
 								</span>								
                             </p>

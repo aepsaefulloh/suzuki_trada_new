@@ -12,6 +12,7 @@ require_once ROOT_PATH.'/lib/init.php';
 <html lang="zxx">
 
 <head>
+<?php require_once ROOT_PATH.'/includes/analytics.php'?>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Booking Test Drive</title>
@@ -20,6 +21,11 @@ require_once ROOT_PATH.'/lib/init.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="telephone=no" name="format-detection" />
     <meta name="HandheldFriendly" content="true" />
+    <meta property="og:url" content="<?php echo ROOT_URL?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<?php echo $objConf['DD_SITENAME']?>" />
+    <meta property="og:description" content="<?php echo $objConf['DD_DESCRIPTION']?>" />
+    <meta property="og:image" content="<?php echo ROOT_URL?>/assets/img/about_img.jpg?<?php echo rand()?>"/>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/master.css?<?php echo rand()?>" />
@@ -41,7 +47,7 @@ require_once ROOT_PATH.'/lib/init.php';
     require_once ('includes/header.php')
     ?>
 
-    
+
     <div class="section-title-page test-drive area-bg area-bg_dark area-bg_op_70">
         <div class="area-bg__inner">
             <div class="container">
@@ -90,10 +96,9 @@ require_once ROOT_PATH.'/lib/init.php';
 if($savestatus == 0){
 ?>
                 <div class="col-xs-12">
-                    <form class="test-drive-form" action="<? echo ROOT_URL."/test-drive.php"?>"
+                    <form class="test-drive-form" action="<?php echo ROOT_URL."/test-drive.php" ?>"
                         method="post">
                         <input type='hidden' name='ACT' value='ADD'>
-
                         <div class="row">
                             <div class="col-md-4">
                                 <input class="form-control" type="text" name="FULLNAME" placeholder="Nama Lengkap"
@@ -119,7 +124,8 @@ if($savestatus == 0){
                                         foreach($list_kab['RESULT'] as $list_kab){
                                         echo ['SQL'];
                                     ?>
-                                    <option value="<?php echo $list_kab['ID'] ?>"><?php echo $list_kab['KAB'] ?></option>
+                                    <option value="<?php echo $list_kab['ID'] ?>"><?php echo $list_kab['KAB'] ?>
+                                    </option>
                                     <?php } ?>
 
                                 </select>
@@ -137,7 +143,7 @@ if($savestatus == 0){
                             </div>
                             <div class="col-md-4">
                                 <input class="form-control" type="date" name='TD_DATE' required="required">
-                            </div> 
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4 col-md-offset-5">
@@ -147,8 +153,8 @@ if($savestatus == 0){
                     </form>
                     <?php
                             }else{?>
-                            <p style='font-weight:bold'>Terima kasih, kami akan segera menghubungi anda kembali<p>
-							<?php
+                    <p style='font-weight:bold'>Terima kasih, kami akan segera menghubungi anda kembali<p>
+                            <?php
 
                             }
                         ?>

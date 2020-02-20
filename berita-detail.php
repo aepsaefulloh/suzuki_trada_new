@@ -17,16 +17,17 @@ upcountArt($pr);
 <html lang="zxx">
 
 <head>
+<?php require_once ROOT_PATH.'/includes/analytics.php'?>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title><?php echo $objConf['DD_SITENAME']?> | <?php echo $list['TITLE']?></title>
-    <meta content="<?php echo $list['SUMMARY']?>" name="description" />
-    <meta content="<?php echo $list['KEYWORD']?>" name="keywords" />
-    <meta property="og:url" content="<?php echo ROOT_URL.'/berita-detail.php?id='.$list['ID']?>" />
+    <title><?php echo $list['TITLE']?></title>
+    <meta content="description" name="<?php echo $list['SUMMARY']?>" />
+    <meta content="keywords" name="<?php echo $list['KEYWORD']?>" />
+    <meta property="og:url" content="<?php echo ROOT_URL?>" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php echo $list['TITLE']?>" />
-    <meta property="og:description" content="<?php echo $list['DESCRIPTION']?>" />
-    <meta property="og:image" content="<?php echo ROOT_URL.'/images/content/'.$list['IMAGE'].'?var='.rand()?> ?>" />
+    <meta property="og:title" content="<?php echo $objConf['DD_SITENAME']?>" />
+    <meta property="og:description" content="<?php echo $objConf['DD_DESCRIPTION']?>" />
+    <meta property="og:image" content="<?php echo ROOT_URL?>/assets/img/about_img.jpg?<?php echo rand()?>"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="telephone=no" name="format-detection" />
     <meta name="HandheldFriendly" content="true" />

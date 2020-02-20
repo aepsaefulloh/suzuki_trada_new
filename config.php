@@ -8,11 +8,12 @@ error_reporting(E_ALL);
 
 
 define('DB_HOST', 'localhost');
-define('DB_UID', 'suzukitrada_user');
+define('DB_UID', 'user_trada');
 define('DB_PWD', 'p4ssword');
 define('DB_DATABASE', 'suzukitrada');
-define( "ROOT_PATH", "/home/nginx/domains/suzukitrada.sketsahouse.com/public" );
-define( "ROOT_URL", "https://suzukitrada.sketsahouse.com" );
+define( "ROOT_PATH", "/var/www/html/www.suzukitrada.id" );
+define( "ROOT_URL", "https://www.suzukitrada.id");
+
 
 define( "CACHE_URL", ROOT_URL."/cache" );
 

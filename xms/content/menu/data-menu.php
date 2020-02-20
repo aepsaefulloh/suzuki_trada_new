@@ -20,7 +20,7 @@ if($submitcontent=='1'){
 	}
 	
 	$result=saveRecord('tbl_menu',$objVar);
-	echo $result['SQL'];
+	//echo $result['SQL'];
 	
 	
 	require_once CMS_PATH."/include/jsonwrite.php";

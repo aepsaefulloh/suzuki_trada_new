@@ -14,6 +14,7 @@ $page = isset($_REQUEST['page'])?$_REQUEST['page']:"1";
 <html lang="zxx">
 
 <head>
+<?php require_once ROOT_PATH.'/includes/analytics.php'?>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>CSR</title>
@@ -22,6 +23,11 @@ $page = isset($_REQUEST['page'])?$_REQUEST['page']:"1";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="telephone=no" name="format-detection" />
     <meta name="HandheldFriendly" content="true" />
+    <meta property="og:url" content="<?php echo ROOT_URL?>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<?php echo $objConf['DD_SITENAME']?>" />
+    <meta property="og:description" content="<?php echo $objConf['DD_DESCRIPTION']?>" />
+    <meta property="og:image" content="<?php echo ROOT_URL?>/assets/img/about_img.jpg?<?php echo rand()?>"/>
     <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/master.css?<?php echo rand()?>" />
     <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/color.css?<?php echo rand()?>" />
     <link rel="stylesheet" href="<?php echo ROOT_URL ?>/assets/css/styles.css?<?php echo rand()?>" />
